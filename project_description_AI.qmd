@@ -1,0 +1,106 @@
+---
+title: "Metabolic Signatures Toward Type 2 Diabetes: Decoding Natural Incretin–Glucagon Physiology and Metabolic Traits to Improve Cardiometabolic Risk Stratification"
+author: "Jonas Frey Rosborg Schaarup"
+date: "2026-01-05"
+format:
+  pdf: default
+  html: default
+fontsize: 11pt
+lang: en
+---
+
+# Brief Project Description incl. Choice of Database
+
+**Brief Project Description**  
+Type 2 diabetes (T2D) and cardiometabolic disease (CMD) develop through heterogeneous, interacting pathways. This project will identify how **natural incretin (GLP-1, GIP)** and **glucagon** responses during an oral glucose tolerance test (OGTT) influence long-term CMD risk, and how these effects are **mediated or modified** by liver health, adiposity, inflammation and metabolomic profiles. We integrate **traditional epidemiology**, **genetic causal inference** (Mendelian randomisation, pathway-specific polygenic risk scores), **structured causal mediation**, and **machine-learning dimensionality reduction/prediction** to (i) uncover causal pathways from hormone dynamics to CMD outcomes, (ii) map multidimensional metabolic heterogeneity, and (iii) build clinically useful prediction models that obviate the need for full OGTT hormone testing in routine care.
+
+**Choice of Database**  
+The **Fenland Study** (MRC Epidemiology Unit, UK) is uniquely suited as the **selected database** because it combines **OGTT-based incretin/glucagon**, genetics, proteomics/metabolomics, DEXA-based adiposity, liver function biomarkers, and long-term CMD outcomes in a general population. We will validate findings in **ADDITION-PRO** (Danish high-risk cohort) and **UK Biobank** (external validation), where applicable.  
+**Value added to the Fenland database:** the project will **generate and deposit** (1) harmonised OGTT-derived incretin–glucagon phenotypes, (2) causal pathway maps and mediator panels (metabolites/biomarkers), (3) machine-learning metabolic clusters, and (4) prediction algorithms and code. All derived assets will be returned to Fenland within **two years** of generation/publication, in FAIR format, thereby enhancing database attractiveness and reusability for future CMD research.
+
+# Project Description
+
+## 1. Purpose & Significance
+Cardiometabolic risk is biologically heterogeneous, yet current clinical stratification rarely captures **post-challenge hormonal physiology**. Therapies targeting GLP-1/GIP/glucagon increasingly show benefits across obesity, dysglycaemia, liver disease and cardiovascular outcomes, but the **natural** (unmedicated) dynamics of these hormones—and their long-term causal links to CMD—remain **poorly defined** at the population level. By combining **deep OGTT phenotyping** with **genetic instruments, metabolomics, liver health and inflammation markers**, we will isolate **causal pathways** and produce **clinically translatable tools** that identify individuals with high potential benefit from **earlier, tailored prevention**.
+
+## 2. Specific Aims
+- **Aim A (Causality):** Determine the **causal roles** of OGTT-measured incretin and glucagon responses in progression to T2D, regression to normoglycaemia, and CMD complications (heart failure, ischemic CVD, CKD), and **quantify mediation** via liver health and metabolomic/inflammatory pathways.
+- **Aim B (Heterogeneity):** **Map metabolic heterogeneity** by integrating hormone dynamics with adiposity, insulin resistance, liver function and inflammation to identify **metabolic clusters** associated with divergent CMD trajectories.
+- **Aim C (Prediction):** Develop and externally validate **biomarker-based prediction models** that estimate incretin/glucagon response profiles and stratify CMD risk **without requiring full OGTT hormones**, enabling practical clinical deployment.
+
+## 3. State of the Art & Preliminary Data
+Evidence suggests metabolic **heterogeneity** in prediabetes and early T2D, with **liver fat and inflammation** as key modifiers. In ADDITION-PRO, OGTT-based GLP-1 responses are **lower** in prediabetes/screen-detected T2D, and insulin resistance is associated with **elevated fasting glucagon and delayed suppression**. Preliminary ADDITION-PRO analyses indicate that **higher 120-min OGTT GLP-1 and glucagon responses** relate to **incident heart failure** over ~11 years. Fenland has demonstrated causal links between **liver enzymes** and T2D, and between **adiposity trait architecture** and metabolic liver disease; it also provides **comprehensive proteomics, metabolomics and genetic data**, enabling advanced causal pathway discovery.  
+**Knowledge gap:** No prior project unifies **OGTT hormone dynamics**, **genetic causal instruments**, **metabolomics**, **liver health**, **inflammation**, and **longitudinal CMD outcomes** within a single **causal + ML framework** in a general population cohort.
+
+## 4. Study Populations & Databases
+- **Selected database:** **Fenland Study** (n≈12,435; adults 30–55; repeated phenotyping; OGTT with glucose/insulin and metabolic markers; genetics; metabolomics; DEXA; outcomes via record linkage).
+- **Validation cohort:** **ADDITION-PRO** (n≈2,082 high-risk adults; detailed 3-point OGTT hormones; ~13-year follow-up; Danish registries).
+- **External validation (where feasible):** **UK Biobank** (deep phenotyping/genomics; outcome linkage).  
+**Data contribution plan:** We will **return derived variables, clusters, algorithms, and code** to **Fenland** (and share with ADDITION-PRO subject to governance) within 24 months of generation/publication, with documentation for **FAIR/CARE** use.
+
+## 5. Research Plan & Methods
+
+### Work Package 1 (Aim A): Causal roles and mediating pathways
+**Hypothesis:** Dysregulated incretin secretion and insufficient glucagon suppression causally drive progression to dysglycaemia and CMD, with **liver health and metabolites** acting as mediators.  
+**Approach:**
+1. **Phenotype construction:** Derive OGTT response features for GLP-1, GIP, glucagon, glucose, insulin (baseline, 30, 120 min; incremental AUCs; slopes; suppression indices). Harmonise between Fenland and ADDITION-PRO.
+2. **Epidemiological analyses:** Time-to-event models (Poisson/Cox) for T2D incidence, regression to normoglycaemia (where available), ischemic CVD, heart failure, CKD; DAG-informed adjustments.
+3. **Genetic causal inference:** **Mendelian randomisation** using pathway-specific PRS and instruments for incretin/glucagon biology and related traits (obesity, insulin resistance, beta-cell function, liver function, inflammation).
+4. **Sequential pathway discovery:** Apply **NetCoupler** (or equivalent structured causal algorithms) to identify **metabolite panels** that mediate hormone–CMD associations; then perform **formal causal mediation** to partition **direct vs indirect effects**.
+5. **Joint response modelling:** Use **principal components/functional data analysis** to capture shared variance across **hormones + glucose/insulin**, increasing power and biological interpretability.  
+**Outputs:** Causal effect estimates; mediator panels; harmonised incretin–glucagon phenotypes; code; documentation.
+
+### Work Package 2 (Aim B): Metabolic heterogeneity and clustering
+**Hypothesis:** Metabolic traits (liver health, adiposity, insulin resistance, inflammation) **modify or compensate** for incretin–glucagon physiology, creating **distinct CMD risk patterns**.  
+**Approach:**
+1. **Feature integration:** Combine OGTT hormone dynamics with liver biomarkers (e.g., ALT, AST, GGT, ALP), DEXA-derived adiposity, inflammation markers (e.g., CRP, soluble CD163, adiponectin), and metabolomics (lipidome, BCAA, acylcarnitines, amines, etc.).
+2. **Dimensionality reduction & clustering:** Apply **PCA/UMAP** for structure, then **model-based clustering** (e.g., Gaussian mixtures) or **graph clustering** to define **metabolic clusters**; assess **cluster stability** (bootstrap/consensus).
+3. **Genetic anchoring:** Incorporate **partitioned PRS** (e.g., incretin/glucagon biology, beta-cell function, liver fat, obesity, insulin resistance, inflammation) to anchor clusters in **biological architecture**.
+4. **Prospective evaluation:** Test clusters against **CMD outcomes** and biomarker trajectories (HbA1c, lipids, eGFR) to identify **high-risk vs compensatory** metabolic profiles.  
+**Outputs:** Cluster definitions; annotated dimensions; stable labels; code; database-ready derived cluster variables.
+
+### Work Package 3 (Aim C): Prediction of hormonal responses and CMD risk
+**Hypothesis:** A **parsimonious set of clinical, genetic and metabolomic markers** can predict **incretin/glucagon response profiles** and stratify CMD risk **without direct OGTT hormones**.  
+**Approach:**
+1. **Two-layer modelling:**
+   - **Layer 1:** Clinical + routine biomarkers (age, sex, BMI/waist, fasting glucose/insulin/HOMA-IR, liver enzymes, lipids, CRP, etc.).
+   - **Layer 2:** Add metabolomics and **PRS** (including novel PRS for GLP-1/GIP/glucagon where available).
+2. **Variable selection & modelling:** Use **variance restriction**, **LASSO/elastic net**, and **non-linear ML** (e.g., random survival forests, gradient boosting) with **TRIPOD+AI-compliant** development and validation.
+3. **Validation:** Internal cross-validation in Fenland; **external validation** in ADDITION-PRO and, where feasible, UK Biobank.
+4. **Clinical utility:** Calibration, discrimination (C-index/AUROC), decision-curve analysis; development of **risk-stratification thresholds** for precision prevention.  
+**Outputs:** Calibrated prediction models; variable importance rankings; simplified score(s); code; deployment guidance; database-ready algorithm artefacts.
+
+## 6. Implementation Plan & Timeline (Gantt-compatible)
+- **Year 1:** Data access & governance; variable harmonisation; construction of OGTT hormone phenotypes; initial Cox/Poisson analyses; instrument/PRS validation; preliminary MR.
+- **Year 2:** NetCoupler pathway discovery; structured mediation; dimensionality reduction/clustering; genetic anchoring; prospective evaluation of clusters; initial prediction models.
+- **Year 3:** Model refinement with metabolomics/PRS; external validation (ADDITION-PRO ± UK Biobank); clinical utility analyses; manuscript submissions; **deposit of derived variables, clusters, models, and code** to Fenland (and ADDITION-PRO per governance).
+
+## 7. Data Contribution & FAIR/CARE Plan
+We will return to **Fenland**: (a) harmonised OGTT incretin–glucagon phenotype variables; (b) mediator panels and causal pathway metadata; (c) metabolic cluster labels and definitions; (d) prediction algorithms, coefficients, PRS specifications where allowed; (e) reproducible code and documentation (**version-controlled**).  
+All assets will be shared in **FAIR** format (rich metadata, ontologies, provenance), respecting **CARE** principles and cohort governance, **within 24 months** of generation/publication.
+
+## 8. Collaboration & Environment
+The project is anchored in a strong CMD research environment with expertise in **epidemiology, endocrinology, biostatistics and causal inference**. Collaboration with the **MRC Epidemiology Unit** (Fenland custodians) provides mentorship on MR/causal methods, data harmonisation, and validation across cohorts. Danish partners provide **registry linkage expertise** and clinical translation pathways. Regular joint meetings will align analysis protocols and plan database-ready deliverables.
+
+## 9. Feasibility, Risks & Mitigation
+- **Feasibility:** All required data layers exist in Fenland; ADDITION-PRO offers deep OGTT hormones and long follow-up; UK Biobank supports external replication for genetic/metabolomic findings.
+- **Risks & Mitigation:**
+  - *Instrument strength/pleiotropy:* Use multiple MR instruments, sensitivity analyses (Egger, weighted median), and pathway-specific PRS.
+  - *Cluster instability:* Apply consensus clustering, bootstrap stability indices, and genetic anchoring.
+  - *Model overfitting:* Follow **TRIPOD+AI** standards; nested CV; external validation; parsimony.
+  - *Data access delays:* Early submission of access requests; phased analyses to ensure progress; interim work on publicly available instruments.
+  - *Generalizability:* Validate across **high-risk (ADDITION-PRO)** and **general population (Fenland)**; explore transferability to UK Biobank.
+
+## 10. Ethics, Governance & Data Security
+All analyses will comply with cohort-specific approvals, GDPR, and data-use agreements. No new participant contact is planned. Outputs shared with databases will exclude direct identifiers and conform to custodians’ governance. Statistical code will be open-licensed where permitted.
+
+## 11. Expected Outcomes & Impact
+- **Scientific:** First integrated causal map from OGTT hormone dynamics to CMD, revealing **mechanistic mediators** (liver/inflammation/metabolites).
+- **Clinical:** **Biomarker-based prediction tools** enabling identification of people most likely to progress to T2D or develop CMD complications **without full OGTT hormones**, supporting **precision prevention** and earlier intervention.
+- **Database value:** Reusable derived variables, clusters, algorithms and code **returned to Fenland** (and shared with ADDITION-PRO per policy), enhancing attractiveness and enabling **future CMD research**.
+
+## 12. Synergy with Ongoing Projects
+This proposal complements—but does not duplicate—ongoing heterogeneity work (e.g., DP-Next WP3). DP-Next centres on phenotypic heterogeneity; here we **extend** by integrating **OGTT hormonal physiology**, **causal inference**, **mediation** and **predictive modelling**, and by **returning database-ready assets**, which DP-Next does not generate.
+
+## 13. Abbreviations
+ALT/AST/ALP: liver enzymes; AUC: area under the curve; BCAA: branched-chain amino acids; CMD: cardiometabolic disease; CRP: C-reactive protein; DAG: directed acyclic graph; DEXA: dual-energy X-ray absorptiometry; GIP/GLP-1: incretin hormones; MR: Mendelian randomisation; OGTT: oral glucose tolerance test; PCA/UMAP: dimensionality reduction methods; PRS: polygenic risk score; T2D: type 2 diabetes; TRIPOD+AI: reporting standard for prediction models.
