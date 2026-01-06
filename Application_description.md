@@ -1,6 +1,5 @@
 ---
-title: "Project_description"
-format: pdf
+format: html
 editor: visual
 
 bibliography: references.bib
@@ -9,7 +8,7 @@ csl: the-lancet.csl
 
 # PROJECT TITLE
 
-**Metabolic Signatures Toward Type 2 Diabetes: Decoding Natural Incretin and Glucagon Pathways in conjunction with metabolic traits in the Progression to Type 2 Diabetes and Related Complications**
+**Metabolic Signatures in pre-diabetes: Decoding Incretin and Glucagon Pathways and Their Interaction with Metabolic Traits in cardiometabolic disease progression**
 
 # BRIEF PROJECT DESCRIPTION incl. CHOICE OF DATABASE (maximum 2,000 characters, including spaces, line breaks and special characters)
 
@@ -23,11 +22,37 @@ By using novel epidemiological methods to characterizing peoples' risk of progre
 
 **Choice of database**
 
+The Fenland Study (MRC Epidemiology Unit, UK) is uniquely suited as the selected database because it combines OGTT-based incretin/glucagon, genetics, proteomics, metabolomics, DEXA-based adiposity, liver function biomarkers, and long-term cardiometabolic outcomes in a general population. We will validate findings in ADDITION-PRO (Danish cohort) and UK Biobank (external validation), where applicable. Value added to the Fenland database: the project will generate and deposit (1) harmonised OGTT-derived incretin–glucagon phenotypes, (2) causal pathway maps and mediator panels (metabolites/biomarkers), (3) machine-learning metabolic clusters, and (4) prediction algorithms and code. All derived assets will be returned to Fenland within two years of generation/publication, in FAIR format, thereby enhancing database attractiveness and reusability for future cardiometabolic research.
+
 # PROJECT DESCRIPTION (maximum 20,000 characters, including spaces, line breaks and special characters).
+
+Successful applications describe focused projects, feasible within the budget, timeframe and the manpower requested (maximum 20,000 characters, including spaces, line breaks and special characters).  
+
+Please consider the following:  
+• Describe your proposed research project in detail – including purpose, state-of-the-art, background, methods, implementation, novelty, feasibility, and the significance of the project.  
+• In case of collaboration with another research group, its nature must be described in
+the project description, and the main applicant must be the leader of the project. The
+role of the collaborator must also be described.  
+• Include a short paragraph of the synergy of the proposed project with ongoing
+project(s) and already funded activities. 
+• You are encouraged to include and describe preliminary data.  
+• Up to four illustrations (figures, tables, diagrams etc.) can be uploaded.   Please only
+include illustrations relevant for the assessment of your application.   Inclusion of a
+Gantt Chart and preliminary data as figures are welcomed. 
+It can take up to five working days to register a new
+administrating institution in NORMA.
+The application cannot be submitted before the institution has
+been registered.
+SIDE 13/21
+• In case you are submitting a project proposal, which has been submitted to NNF
+before, please clearly describe what has changed/improved in the
+application/project.  
+• Abbreviations should be defined at the first use, and preferably a list of abbreviations
+should be included in the project description.  
 
 ## Specific aim
 
-This Inter-SUSTAIN Part 2 projects aims to elucidate the role of natural incretin and glucagon responses as drivers of heterogeneity in the long-term risk of diabetes and related complications, and to map clinical and biological traits related to these responses with particular emphasis on liver health, adiposity and inflammation. Thereby, identifying patterns of metabolic dysfunction that may predict progression to type 2 diabetes and inform personalized treatment strategies.
+This Inter-SUSTAIN Part 2 projects aims to using The Fenland study to elucidate the role of natural incretin and glucagon responses as drivers of heterogeneity in the long-term risk of diabetes and related complications, and to map clinical and biological traits related to these responses with particular emphasis on liver health, adiposity and inflammation. Thereby, identifying patterns of metabolic dysfunction that may predict progression to type 2 diabetes and inform personalized treatment strategies.
 
 The specific aims are to:
 
@@ -37,29 +62,39 @@ b)  To identify metabolites and biomarkers for liver health and inflammation med
 
 c)  To map dimensions of metabolic traits in conjunction with incretin and glucagon responses, in order to decipher their role in the context of deteriorated glucose metabolism and their relationship to long-term cardiometabolic health
 
-## Background and significance of
+## Background and significance of the project
 
-Pre-diabetes is a complex state associated with increased risk of progression to type 2 diabetes and related complications[@wagner2021; @tabák2012; @birkenfeld2024]. However, not all people with pre-diabetes progress to diabetes; many persist in the prediabetic state or regress to normoglycemia over the course of various years[@tabák2012]. Recently the idea of metabolic heterogeneity in type 2 diabetes has been extended to pre-diabetes, and traits that distinguish individuals most likely to progress to diabetes, such as insulin-resistant fatty liver and visceral adiposity-related renal dysfunction, have been identified[@wagner2021]. In recent years, incretins (Glucagon Like Peptide 1 \[GLP 1\] and Gastric Inhibitory Polypeptide \[GIP\]) and the hormone glucagon have gained increasing attention as targets in therapeutics for prevention of type 2 diabetes and diabetes-related complications[@kahn2024; @jastreboffaniam.2025; @jastreboffaniam.2023; @sanyal2024; @lincoffa.michael2023]. GLP-1 and GIP enhance post-meal insulin secretion, supporting efficient nutrient handling[@nauck1986]. Glucagon serves as a counter-regulatory hormone to insulin and maintains glucose balance both during fasting and following glucose intake[@hædersdal2023]. However, in the context of heterogeneity in pre-diabetes, the role of natural incretin and glucagon responses for the progression to type 2 diabetes and diabetes-related complications remains unexplored. Prior research in the Danish ADDITION-PRO study showed that, individuals with pre-diabetes and type 2 diabetes exhibited up to 25% lower natural GLP-1 responses to oral glucose[@færch2015]. Additionally, impaired glucagon suppression and elevated fasting glucagon levels were observed in individuals with insulin resistance and early glucose dysregulation[@færch2016]. A limitation of the ADDITION-PRO cohort is the selection of individuals at high risk of diabetes based on diabetes-specific risk scores, which limits the generalizability of the findings to the broader population
+Pre-diabetes is a complex state associated with increased risk of progression to type 2 diabetes and related complications[@wagner2021; @tabák2012; @birkenfeld2024]. However, not all people with pre-diabetes progress to diabetes; many persist in the prediabetic state or regress to normoglycemia over the course of various years[@tabák2012]. Remission to normoglycemia has been shown to reduce the risk of cardiovascular morbidity and mortality, however, it remains unclear to which extend if the remission is driven by lifestyle changes or by a heterogeneous low-risk subgroup[@vazquezarreola].
 
-The Fenland Study represents a pioneering population-based cohort that has substantially advanced the precision of identifying individuals at high risk of type 2 diabetes[@carrasco-zanini2022] and elucidating causal pathways underlying cardiometabolic disease [@desilva2019][@wittemans2019][@lotta2021][@agrawal2024]. Leveraging extensive phenotypic and genetic data, the study has established causal relationships between liver function markers, alanine aminotransferase (ALT), aspartate aminotransferase (AST), and alkaline phosphatase (ALP), and type 2 diabetes[@desilva2019], as well as between adiposity-related traits, fat-mass ratios, and metabolic dysfunction-associated liver disease[@agrawal2024]. Moreover, Fenland data have uncovered mechanistic links between interleukin-6–mediated inflammation and type 2 diabetes[@bowker2020], highlighting the interplay between inflammatory and metabolic pathways. The cohort’s precise characterization of adiposity, inflammation, and hepatic health, combined with detailed assessments of incretin, glucagon, insulin, and glucose dynamics in a general population, provides an unparalleled resource for investigating the constellation of metabolic traits and their long-term impact on cardiometabolic health. Their cohort provide an unique timing for studying contellations of metabolic traits relevant to progression to cardiometablic disease and how the play in conjuctions to glucose and hormones.
+Recently the idea of metabolic heterogeneity in type 2 diabetes has been extended to pre-diabetes, and traits that distinguish individuals most likely to progress to diabetes, such as insulin-resistant fatty liver and visceral adiposity-related renal dysfunction, have been identified[@wagner2021]. In recent years, incretins (Glucagon Like Peptide 1 \[GLP 1\] and Gastric Inhibitory Polypeptide \[GIP\]) and the hormone glucagon have gained increasing attention as targets in therapeutics for prevention of type 2 diabetes and diabetes-related complications[@kahn2024; @jastreboffaniam.2025; @jastreboffaniam.2023; @sanyal2024; @lincoffa.michael2023]. GLP-1 and GIP enhance post-meal insulin secretion, supporting efficient nutrient handling[@nauck1986]. Glucagon serves as a counter-regulatory hormone to insulin and maintains glucose balance both during fasting and following glucose intake[@hædersdal2023]. However, in the context of heterogeneity in pre-diabetes, the role of natural incretin and glucagon responses for the progression to type 2 diabetes and diabetes-related complications remains unexplored. Prior research in the Danish ADDITION-PRO study showed that, individuals with pre-diabetes and type 2 diabetes exhibited up to 25% lower natural GLP-1 responses to oral glucose[@færch2015]. Additionally, impaired glucagon suppression and elevated fasting glucagon levels were observed in individuals with insulin resistance and early glucose dysregulation[@færch2016]. A limitation of the ADDITION-PRO cohort is the selection of individuals at high risk of diabetes based on diabetes-specific risk scores, which limits the generalizability of the findings to the broader populations.
+
+The Fenland Study represents a pioneering population-based cohort that has substantially advanced the precision of identifying individuals at high risk of type 2 diabetes[@carrasco-zanini2022] and elucidating causal pathways underlying cardiometabolic disease [@desilva2019][@wittemans2019][@lotta2021][@agrawal2024]. Leveraging extensive phenotypic and genetic data, the study has established causal relationships between liver function markers, alanine aminotransferase (ALT), aspartate aminotransferase (AST), and alkaline phosphatase (ALP), and type 2 diabetes[@desilva2019], as well as between Dual Energy X-ray Absorptiometry (DEXA) derived adiposity traits, fat-mass ratios, and metabolic dysfunction-associated liver disease[@agrawal2024]. Moreover, Fenland data have uncovered mechanistic links between interleukin-6–mediated inflammation and type 2 diabetes[@bowker2020], highlighting the interplay between inflammatory and metabolic pathways. The cohort’s precise characterization of adiposity, inflammation, and hepatic health, combined with detailed assessments of incretin, glucagon, insulin, and glucose dynamics in a general population, provides an unparalleled resource for investigating the constellation of metabolic traits and their long-term impact on cardiometabolic health. Their cohort provide an unique timing for studying contellations of metabolic traits relevant to progression to cardiometablic disease and how the play in conjuctions to glucose and hormones.
 
 This project is grounded in the hypothesis that dysregulated incretin secretion and inadequate glucagon suppression, together with insulin resistance, accelerate the progression of metabolic dysfunction by activating hepatic and inflammatory pathways in individuals with pre-diabetes.
 
 [Work Package 3 (Heterogeneity) in the new DP-Next](https://dp-next.github.io/wp3.html)
 
-### Clinical applicability
+### Clinical applicability 
 
-This project supports the development of a precision approach to pre-diabetes by identifying a set of easily obtainable biomarkers that can optimally distinguish individuals with a high probability of stable pre-diabetes or remission from those at greatest risk of progressing to diabetes. This work is connected to the objectives of [Work Package 3 (Heterogeneity) in the new DP-Next](https://dp-next.github.io/wp3.html) project, which aims to develop new strategies for diabetes prevention[@witte2025]. I will work in close connection with the DP-Next team and it is expected that the findings from the Fenland study and ADDITION-PRO will inform the design and structure of the new DP-Next cohort.
+(Note from NNF: If you have an active grant from the Foundation, this may be taken into consideration in the
+evaluation of your application for a new grant. In general, it is recommended that the main
+applicant has delivered results on the active grant(s) before submission of a new application
+to the Foundation. If you apply while having an active grant from the Foundation, you must
+describe how the project you propose in this application is different from and/or coherent
+with the project(s) already funded and briefly describe the progress of the already funded
+project(s). This information should be included in the Project Description)
 
-The ADDITION-PRO study, in combination with the Danish National Health Registries, offers a unique opportunity through long-term follow-up data to support these efforts. It enables the identification of phenotypic and biological metabolic traits that characterize individuals at high risk of developing type 2 diabetes and related complications, including macrovascular and microvascular conditions, as well as increased mortality. Furthermore, these traits can be linked to longitudinal changes in HbA1c, lipid profiles, and eGFR, allowing for the identification of individuals with accelerated progression toward cardiometabolic complications. These insights support the timely identification of individuals who may benefit from early interventions, such as intensive lifestyle modifications or specific medications.
+The Inter-SUSTAIN project supports the development of a precision approach to pre-diabetes by identifying a set of easily obtainable biomarkers that optimally distinguish individuals with a high probability of stable pre-diabetes or remission from those at greatest risk of progressing to diabetes. This work aligns with the objectives of the Novo Nordisk Foundation-funded Steno National grant, specifically [Work Package 3 (Heterogeneity) in the new DP-Next](https://dp-next.github.io/wp3.html), which aims to develop new strategies for diabetes prevention [@witte2025]. The project will be in close connection with the DP-Next team and it is expected that the findings from the Fenland study and ADDITION-PRO will inform the design and structure of the new DP-Next cohort.
 
-## Work Package 1: Investigate causal relationship of incretin and glucagon and long-term cardiometabolic disease and identify mediating pathways.
+The Fenland study offers a unique opportunity through long-term follow-up data to support these efforts. It enables the identification of phenotypic and biological metabolic traits that characterize individuals at high risk of developing type 2 diabetes and related complications, including macrovascular and microvascular conditions, as well as increased mortality. Furthermore, these traits can be linked to longitudinal changes in HbA1c, lipid profiles, and eGFR, allowing for the identification of individuals with accelerated progression toward cardiometabolic complications. These insights support the timely identification of individuals who may benefit from early interventions, such as intensive lifestyle modifications or specific medications.
+
+## Work Package 1: Investigate causal relationship of neutral release of incretin and glucagon and long-term cardiometabolic disease and identify mediating pathways.
 
 Hypothesis for Work Package 1: Natural incretin and glucagon responses play a causal role as drivers of the risk of progression from pre-diabetes to type 2 diabetes and diabetes-related complications. In this pathway, biomarker and metabolites related to liver health play a mediating role.
 
-Natural incretin and glucagon reposes in epidemiological studies have been mostly investigated cross-sectionally. Longitudinally, a higher GLP-1 response during OGTT was associated with a steeper decrease in fasting glucose over time [@koopman2018]; however, with a limited sample size (n=121). \[The ADDITION PRO cohort includes 1657 individuals at high risk of diabetes who underwent measurement of natural incretin and glucagon responses during a 3-point (0, 30, 120 min) oral glucose tolerance test (OGTT) in 2009-2010, i.e. before the introduction of incretin based therapies[@færch2015; @færch2016; @johansen2012]. This unique timing provides an opportunity to prospectively analyze the associations between individuals's natural hormonal responses to glucose and progression to diabetes, regression to normoglycemia, or risk of diabetes-related complications.
+Natural incretin and glucagon reposes in epidemiological studies have been mostly investigated cross-sectionally. Longitudinally, a higher GLP-1 response during OGTT was associated with a steeper decrease in fasting glucose over time [@koopman2018]; however, with a limited sample size (n=121). The ADDITION PRO cohort includes 1657 individuals at high risk of diabetes who underwent measurement of natural incretin and glucagon responses during a 3-point (0, 30, 120 min) oral glucose tolerance test (OGTT) in 2009-2010, i.e. before the introduction of incretin based therapies[@færch2015; @færch2016; @johansen2012]. This unique timing provides an opportunity to prospectively analyze the associations between individuals's natural hormonal responses to glucose and progression to diabetes, regression to normoglycemia, or risk of diabetes-related complications.
 
-Preliminary findings from ADDITION PRO indicate that per SD higher glucagon (incidence rate ratio \[IRR\]: 1.38 \[CI: 1.15 to 1.67\]) and GLP-1 responses (IRR: 1.34 \[CI: 1.05 to 1.71\]) at 120 minutes during the OGTT are associated with incident heart failure over an 11-year follow-up period.
+Preliminary findings from ADDITION PRO indicate that per SD higher glucagon (incidence rate ratio IRR: 1.38 CI: 1.15 to 1.67) and GLP-1 responses (IRR: 1.34 CI: 1.05 to 1.71) at 120 minutes during the OGTT are associated with incident heart failure over an 11-year follow-up period.
 
 Genetic variants, clinical biomarkers and metabolites serve as valuable indicators of individual predisposition for specific phenotypes (genes) and mediating pathways (metabolites and clinical biomarkers) that link phenotypes to disease outcomes. Genetic variants can strengthen causal inference by serving as instrumental variables in Mendelian randomization studies[@daveysmith2014]. Identification of metabolic pathways that mediate the effect of genetically determined phenotypes on the incidence of diseases such as type 2 diabetes helps us understand the causal biological mechanisms linking traits to disease. This understanding in turn supports the development of potential new targeted interventions based on metabolic pathways.
 
@@ -77,9 +112,9 @@ To sequence mediating pathways and identify key metabolites linking incretin and
 
 ## Work Package 2: To map dimensions of metabolic traits in conjunction with incretin and glucagon responses, in order to decipher their role in the context of deteriorated glucose metabolism.
 
-Hypothesis for Work Package 2: natural incretin and glucagon responses may exert protective, compensatory effects under conditions of obesity, hyperglycemia, insulin-resistance, and loss of beta-cell function. We further hypothesize that liver health may act as an effect modifier in the associations between incretin-glucagon responses and metabolic outcomes.
+Hypothesis for Work Package 2: natural incretin and glucagon responses may exert protective, compensatory effects under conditions of obesity, hyperglycemia, insulin-resistance, and loss of beta-cell function. We further hypothesize that liver health and low-grade infalmmation may act as an effect modifier in the associations between incretin-glucagon responses and metabolic outcomes.
 
-Obesity and insulin resistance have long been regarded as central components in the development of type 2 diabetes. Recent clustering analyses have identified liver fat as a main determinant heterogeneity among people with pre-diabetes with regard to their risk of progression to type 2 diabetes [@wagner2021]. Reduced liver function interacts with insulin resistance, glucose and glucagon responses, and is accompanied by low grade inflammation and morphological changes to the liver, particularly MAFLD (Metabolically Associated Fatty Liver Disease)[@winther-sørensen2020; @stefan2025; @hædersdal2023]. The biological actions of GLP-1 and GIP include reducing hepatic inflammation [@hammoud2023]. Liver function therefore appears to be a central pathway modulating diabetes risk and interacting with or mediating the impact of natural incretin and glucagon responses. The Fenland study includes baseline measurements of γ-glutamyl transferase and alanine transaminase, and 11,559 participants had Dual Energy X-ray Absorptiometry (DEXA)[@powell2020] performed allowing to estimate regional fatmass inclunding liver fat. In conjunction with liver function biomarkers, this will enable the calculation of a general indication of liver health.
+Obesity and insulin resistance have long been regarded as central components in the development of type 2 diabetes. Recent clustering analyses have identified liver fat as a main determinant heterogeneity among people with pre-diabetes with regard to their risk of progression to type 2 diabetes [@wagner2021]. Reduced liver function interacts with insulin resistance, glucose and glucagon responses, and is accompanied by low grade inflammation and morphological changes to the liver, particularly MAFLD (Metabolically Associated Fatty Liver Disease)[@winther-sørensen2020; @stefan2025; @hædersdal2023]. The biological actions of GLP-1 and GIP include reducing hepatic inflammation [@hammoud2023]. Liver function therefore appears to be a central pathway modulating diabetes risk and interacting with or mediating the impact of natural incretin and glucagon responses. The Fenland study includes baseline measurements of γ-glutamyl transferase and alanine transaminase, and 11,559 participants had DEXA [@powell2020] performed allowing to estimate regional fatmass inclunding liver fat. In conjunction with liver function biomarkers, this will enable the calculation of a general indication of liver health.
 
 We will further integrate dimensions of metabolically relevant low-grade inflammation by integrating markers of macrophage activation (soluble CD163), adiponectin, and C-reactive protein [@deichgræber2016] in our multidimensional characterization of liver health. In addition, fasting branched-chain amino acids (BCAA)[@mahendran2017]and lipid-related metabolites during the OGTT[@buckley2017] were obtained in ADDITION-PRO. These data allow us to characterize aspects of metabolic function, such as liver fat accumulation[@gnatiucfriedrichs2023]and tissue-specific insulin resistance [@vogelzangs2020; @beyene2020] .
 
@@ -99,11 +134,11 @@ We will apply principal component analysis to integrate variables and identify a
 
 *trash can* and in a subgroup of around 800 participants, still B-mode ultrasound images of the liver, collected with a standardized protocol[@johansen2012]. WP3 will apply novel AI-based image processing and analysis methods to extract features and cluster images. We will leverage recent advances in AI-based image analysis by applying transfer learning approaches and open-source feature extraction and image classification algorithms to ultrasound liver images[@cohn2021].
 
-## Work Package 3: To predict incretin and glucagon responses based clinical and biological traits
+## Work Package 3: To predict incretin and glucagon responses in conjuction with metabolic traits based clinical and biological traits
 
-Hypothesis for Work Package 3: dysfunctional individual incretin and glucagon responses in conjunction with can be predicted to a clinically useful degree based on clinical, genetic and metabolomic biomarkers, and these predictions can stratify individuals by their risk of progression to type 2 diabetes and related complications.
+Hypothesis for Work Package 3: population heterogeneity of incretin and glucagon responses in conjunction with metabolic traits can be predicted to a clinically useful degree based on clinical, genetic and metabolic biomarkers, and these predictions can stratify individuals by their risk of progression to type 2 diabetes and related complications.
 
-Given the fact that it is impractical to assess a full incretin and glucagon response in clinical practice, WP2 aims to establish a practical set of biomarkers that jointly have the capacity to characterize incretin and glucagon responses. Analyses in the Fenland study will be carried out across three levels: (1) traditional clinical characteristics, (2) genomic data, and (3) metabolomics profiles. The utility of these predicted responses will be investigated in relation to cardiometabolic outcomes in large population-based cohorts that include the same biomarkers but have not measured incretin and glucagon responses, including the UK Biobank and Fenland Study.
+Given the fact that it is impractical to assess a full incretin and glucagon response in clinical practice, WP3 aims to establish a practical set of biomarkers that jointly have the capacity to characterize incretin and glucagon responses. Analyses in the Fenland study will be carried out across three levels: (1) traditional clinical characteristics, (2) metabolomics profiles, and (3) genomic data.The utility of these predicted traits will be investigated in relation to cardiometabolic outcomes in large population-based cohorts that include the same biomarkers but have not measured incretin and glucagon responses, such as the UK Biobank, as well as using available markers in Danish registries.
 
 ### Research design and methods
 
@@ -168,27 +203,23 @@ To extend findings and predicted characterizations in larger population-based co
 
 ## Collaboration
 
-**Synergy with the MRC Epidemiology Unit**
-
 The synergy between this project and the MRC Epidemiology Unit lies in the integration of deep-phenotyped metabolic data with large-scale population health surveillance. While my work in Denmark leverages the specialized ADDITION-PRO cohort, the MRC Epidemiology Unit provides an unparalleled environment for precision epidemiology. By combining the Unit’s global leadership in studying the genetic and environmental determinants of obesity and type 2 diabetes with my focus on natural incretin and glucagon responses, we create a powerful framework to move from observational data to causal understanding. This collaboration allows for the cross-pollination of Danish clinical depth and the UK’s extensive population-based datasets, ensuring that findings regarding metabolic drivers are both biologically robust and representative of the broader population.
-
-**The Role of the Collaborator**
 
 The MRC Epidemiology Unit, specifically through the mentorship of experts in the Fenland Study including Professor Nick Wareham and Professor Simon Griffin, will play a critical role as the primary international host and scientific advisor. Their role is three-fold:
 
-Data Provision and Oversight: Providing access to the Fenland Study (n=12,435), which is uniquely suited for this project due to its objective measures of metabolic function and long-term follow-up.
+1. Data Provision and Oversight: Providing access to the Fenland Study (n=12,435), which is uniquely suited for this project due to its objective measures of metabolic function and long-term follow-up.
 
-Methodological Mentorship: Facilitating my training in causal inference and Mendelian Randomization, specifically using genetic instruments to determine the causal role of incretin and glucagon in cardiometabolic outcomes.
+2. Methodological Mentorship: Facilitating training in causal inference and Mendelian Randomization, specifically using genetic instruments to determine the causal role of incretin and glucagon in cardiometabolic outcomes.
 
-Validation Expertise: Assisting in the harmonisation of data between the Fenland Study, UK Biobank, and ADDITION-PRO to ensure that the identified metabolic profiles and mediating pathways (such as liver health and inflammation) are validated across different geographical and demographic contexts.
+3. Validation Expertise: Assisting in the harmonisation of data between the Fenland Study, UK Biobank, and ADDITION-PRO to ensure that the identified metabolic profiles and mediating pathways (such as liver health and inflammation) are validated across different geographical and demographic contexts.
 
-**Ongoing Synergy and Knowledge Exchange**
 
-The synergy with the MRC Epidemiology Unit is not limited to a single research stay; it is an ongoing institutional bridge. My research is strategically aligned with the Unit’s mission to improve population health through better risk stratification.
+The synergy with the MRC Epidemiology Unit will be an ongoing institutional bridge. Our research is strategically aligned with the Unit’s mission to improve population health through better risk stratification.
 
 Continuous Methodological Alignment: We will maintain regular scientific exchange through joint virtual meetings to align the analytical protocols used in the Fenland Study with the DP-Next (Work Package 3) framework.
 
 Future Frameworks: This collaboration serves as a pilot for long-term data integration between Danish and UK cohorts, establishing a permanent channel for investigating the heterogeneity of type 2 diabetes and refining precision prevention strategies across borders.
 
+![**Figure 3: Gantt chart**](figures/gant_diagram.pdf){width="8in"}
 
 # LAY PROJECT DESCRIPTION
