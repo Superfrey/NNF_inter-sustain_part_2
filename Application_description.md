@@ -105,8 +105,6 @@ Combined with liver function biomarkers, this approach will enable us to generat
 
 We will apply PCA and UMAP to integrate variables and identify a restricted number of metabolic dimensions that reflect the interplay between incretin and glucagon responses along with concurrent glucose-insulin dynamics during the OGTT[@zhou2024]. We will further add dimensions of obesity, insulin resistance, inflammation, liver health markers, subsequently examine these dimensions in relation to diabetes risk[@healy2024]. Finally, metabolite-based profiles and partitioned PRS will be analyzed separately in relation to cardiometabolic outcomes and subsequently incorporated to enrich the dimensional metabolic profiling. All components will be investigated prospectively in relation to cardiometabolic outcomes.
 
-*trash can* and in a subgroup of around 800 participants, still B-mode ultrasound images of the liver, collected with a standardized protocol[@johansen2012]. WP3 will apply novel AI-based image processing and analysis methods to extract features and cluster images. We will leverage recent advances in AI-based image analysis by applying transfer learning approaches and open-source feature extraction and image classification algorithms to ultrasound liver images[@cohn2021].
-
 ## Work Package 3: To predict incretin and glucagon responses in conjuction with metabolic traits based clinical and biological traits
 
 Hypothesis for Work Package 3: population heterogeneity of incretin and glucagon responses in conjunction with metabolic traits can be predicted to a clinically useful degree based on clinical, genetic and metabolic biomarkers, and these predictions can stratify individuals by their risk of progression to type 2 diabetes and related complications.
