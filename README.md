@@ -49,3 +49,23 @@ To be considered complete, you must upload the following documents:
 * **Application Deadline:** February 10, 2026 (2:00 PM CET).
 * **Notification of Success:** June 2026.
 * **Project Start Date:** Earliest September 1, 2026; Latest September 1, 2027.
+
+---
+## To do
+
+Find collaboration task
+
+List of suggested collaborative tasks in the Fenland Study:   
+1. Potential new data collection      
+* The grant can allocate approximately £10 extra per participant.   
+2. Improving cohort data accessibility using Seedcase while maintaining FAIR principles   
+* Read more at https://seedcase-project.org/    
+3. Processing of current data     
+* Investigating whether physical activity and diet interact with incretin and glucagon responses    
+Cleaning physical activity data (e.g., Actiheart) or dietary data (questionnaire or metabolomics)   
+* Processing liver ultrasound images    
+Using novel AI-based image analysis methods to extract features and cluster images for liver health estimation    
+4. Linking Fenland Study data to CPRD   
+* Linkage to medication use and laboratory measurements during follow-up in the Clinical Practice Research Datalink (CPRD) Aurum
+5. New analysis of biobank material   
+* The grant can allocate approximately £10 per participant  
