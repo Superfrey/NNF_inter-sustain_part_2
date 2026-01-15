@@ -1,8 +1,10 @@
 ---
 title: "NNF Inter-SUSTAIN Budget Report"
-author: "Aarhus University Research Team"
+author: "Daniel R. Witte"
 date: last-modified
-format: docx
+format: 
+  html:
+      embed-resources: true
 ---
 
 ```{r setup, include=FALSE}
@@ -42,6 +44,63 @@ final_table <- budget_data %>%
 
 ```{r output, echo=FALSE}
 kable(final_table, digits = 0, format.args = list(big.mark = ","))
+```
+
+```{r figure-plot, echo=FALSE}
+
+library(tidyverse)
+library(scales)
+
+# 1. Prepare data for the plot
+# We pivot the budget items into a "Long" format that ggplot requires
+plot_data <- budget_data %>%
+  select(-Yearly_Total, -inf_factor) %>%
+  rename(
+    `PostDoc Salary` = PostDoc_Salary,
+    `PhD Salary` = PhD_Salary,
+    `PhD Tuition` = PhD_Tuition,
+    `Project Supplement` = Project_Supplement
+  ) %>%
+  pivot_longer(
+    cols = -year, 
+    names_to = "Category", 
+    values_to = "Amount"
+  ) %>% 
+  dplyr::filter(!Category=="PhD_FTE",
+                !Category=="Postdoc_FTE")
+
+# 2. Generate the Figure
+budget_plot <- ggplot(plot_data, aes(x = factor(year), y = Amount, fill = Category)) +
+  # Create a stacked bar
+  geom_col(width = 0.65, color = "white", linewidth = 0.2) +
+  # Add labels to larger bars for clarity (amounts > 300k)
+  geom_text(
+    aes(label = if_else(Amount > 300000, paste0(round(Amount/1000), "k"), "")), 
+    position = position_stack(vjust = 0.5), 
+    size = 3.5, 
+    color = "white", 
+    fontface = "bold"
+  ) +
+  # Formatting
+  scale_y_continuous(labels = label_comma(suffix = " DKK"), expand = expansion(mult = c(0, 0.1))) +
+  scale_fill_brewer(palette = "Paired") +
+  labs(
+    title = "NNF Inter-SUSTAIN Budget Allocation (2027-2029)",
+    subtitle = paste0("Total Grant Request: ", comma(sum(budget_data$Yearly_Total)), " DKK"),
+    x = "Funding Year",
+    y = "Total Requested Amount",
+    fill = "Budget Line Item"
+  ) +
+  theme_minimal() +
+  theme(
+    legend.position = "right",
+    panel.grid.minor = element_blank(),
+    plot.title = element_text(face = "bold", size = 14),
+    axis.text = element_text(size = 10)
+  )
+
+# 3. Print the plot
+print(budget_plot)
 ```
 
 # Budget Justification
