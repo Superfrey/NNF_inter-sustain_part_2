@@ -2,8 +2,8 @@
 title: "Host letter"
 ---
 
-Department of Public Health, Aarhus Univeristy,
-Bartholins alle 2, Aarhus, Denmark
+Department of Public Health, Aarhus Univeristy,\
+Bartholins alle 2, Aarhus, Denmark\
 Date: 1. February 2026
 
 To Whom It May Concern,
