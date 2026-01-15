@@ -1,0 +1,34 @@
+---
+title: "Letter of support"
+format: 
+  html:
+      embed-resources: true
+---
+Subject: Letter of Support for Collaboration on “Metabolic Signatures in Pre-Diabetes: Decoding Incretin and Glucagon Pathways and Their Interaction with Metabolic Traits in Cardiometabolic Disease Progression”
+
+[MRC Epidemiology Unit Letterhead]
+Date: 1. February 2026
+
+To whom it may concern,
+
+On behalf of the MRC Epidemiology Unit, University of Cambridge, I confirm our strong support for the above-mentioned project led by Daniel R. Witte at Department of Public Health, Aarhus Univeristy. We recognize the importance of this research in advancing precision prevention strategies for type 2 diabetes and related cardiometabolic complications.
+
+Our institution commits to the following:
+
+1. Data Access and Collaboration
+We will provide access to the Fenland Study data (n ≈ 12,435 participants) and support harmonization of data between the Fenland Study, ADDITION-PRO, and UK Biobank for validation purposes.
+
+2. Methodological Mentorship
+We will offer guidance in advanced epidemiological methods to the conected PhD student and Postdoc, including causal inference and Mendelian randomization, to strengthen the project’s analytical framework.
+
+3. Scientific Exchange and Infrastructure
+The MRC Epidemiology Unit will facilitate regular scientific exchange through joint meetings and provide expertise in integrating genetic, metabolomic, and phenotypic data for precision epidemiology.
+
+We look forward to collaborating on this project and contributing to its success. Please do not hesitate to contact us for further information.
+
+Sincerely,
+Nicholas Wareham
+
+Director of the MRC Epidemiology Unit\
+MRC Epidemiology Unit\
+University of Cambridge\
