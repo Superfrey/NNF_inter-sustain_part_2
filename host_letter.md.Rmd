@@ -23,9 +23,9 @@ The main applicant’s employment at [Host Institution Name] is secured for the 
 
 We look forward to supporting this important research, which aims to elucidate the role of natural incretin and glucagon responses in the progression of pre-diabetes and related cardiometabolic complications, leveraging data from the Fenland Study, ADDITION-PRO, and UK Biobank.\
 
-Should you require any further information, please do not hesitate to contact us.
+Should you require any further information, please do not hesitate to contact us.\
 
-Sincerely,
-Michael Baggesen Klitgaard
-Head of Department
+Sincerely,\
+Michael Baggesen Klitgaard\
+Head of Department\
 Department of Public Health, Aarhus University
