@@ -1,6 +1,6 @@
 ---
 format: 
-  html:
+  pdf:
       embed-resources: true
 editor: visual
 
