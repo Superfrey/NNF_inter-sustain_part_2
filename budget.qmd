@@ -1,0 +1,73 @@
+---
+title: "NNF Inter-SUSTAIN Budget Report"
+author: "Aarhus University Research Team"
+date: last-modified
+format: docx
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(scales)
+library(knitr) # Required for nice tables in MD
+
+# --- 1. SETTINGS ---
+project_years <- c(2027, 2028, 2029)
+inflation_rate <- 0.03
+project_supplement_rate <- 257000 
+
+# --- 2. CALCULATION EXPENSES ---
+budget_data <- tibble(year = project_years) %>%
+  mutate(
+    inf_factor = (1 + inflation_rate)^(row_number() - 1),
+    Postdoc_FTE = 1.0,
+    PhD_FTE = 1.0,
+    PostDoc_Salary = Postdoc_FTE * 615000 * inf_factor,
+    PhD_Salary     = PhD_FTE * 550000 * inf_factor,
+    PhD_Tuition    = 60000,
+    Equipment      = 100000,
+    Travel         = 20000,
+    Publication    = 35000,
+    Project_Supplement = 2*project_supplement_rate, # Fixed for Postdoc + PhD
+    Yearly_Total = PostDoc_Salary + PhD_Salary + PhD_Tuition + Equipment + Travel + 
+                   Publication + Project_Supplement
+  )
+
+# Create final table for display
+final_table <- budget_data %>%
+  select(-inf_factor) %>%
+  pivot_longer(-year, names_to = "Item", values_to = "Value") %>%
+  pivot_wider(names_from = year, values_from = Value, names_prefix = "Year_") %>%
+  mutate(Total = Year_2027 + Year_2028 + Year_2029)
+```
+
+```{r output, echo=FALSE}
+kable(final_table, digits = 0, format.args = list(big.mark = ","))
+```
+
+# Budget Justification
+
+The total requested funding for the project period 2027–2029 is DKK `r comma(final_table$Total[10])`. The budget has been prepared in accordance with the NNF Inter-SUSTAIN guidelines and the joint agreement between Universities Denmark and the Novo Nordisk Foundation regarding project supplements for Danish universities.
+
+1. Personnel (FTE)
+
+The research team consists of 2.0 Full-Time Equivalents (FTEs) annually, ensuring dedicated scientific focus on the project objectives:
+
+Postdoctoral Researcher (1.0 FTE): Responsible for the primary data analysis, coordination with the selected database custodian, and manuscript preparation. Salary is based on Aarhus University’s standard scales, including a 3% annual inflation/COLA adjustment.
+
+PhD Student (1.0 FTE): Will focus on sub-aims 1 and 2 of the project. A PhD Tuition Fee of DKK 60,000 per year is included (total DKK 180,000).
+
+2. Operating Expenses
+
+Smaller Equipment (DKK 100,000/year): This allocation covers the purchase of high-performance computing (HPC) workstations required for handling large-scale datasets and specialized software licenses for epidemiological modeling.
+
+Travel (DKK 20,000/year): Funds are requested for the Postdoc and PhD student to present research findings at major international conferences (e.g., EASD or ADA) and for project coordination meetings with international collaborators at MRC Epidemiology unit at Cambridge University. This is within the DKK 25,000 annual cap.
+
+Publication (DKK 35,000/year): To ensure maximum visibility and impact, we aim to publish in high-impact, open-access journals. These funds cover Article Processing Charges (APCs).
+
+3. Project Supplement (Danish Universities Only)
+
+As the project is anchored at Aarhus University, a project supplement for research grants is included. This follows the standardized model which replaces traditional overhead, bench fees, and administrative support.
+
+Rate: DKK 250,000 per scientific FTE (Postdoc and PhD) per year.
+
+Total: DKK 514,000 annually. This supplement covers indirect costs including office space, IT infrastructure, and administrative support (HR, finance, and legal) provided by the host institution.
