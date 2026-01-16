@@ -10,25 +10,22 @@ csl: the-lancet.csl
 
 # Project title
 
-**Metabolic Signatures: Decoding incretin and glucagon pathways and their interaction with metabolic traits in long-term cardiometabolic disease progression**
+**Metabolic Signatures: Decoding incretin and glucagon pathways and their interaction with metabolic traits in cardiometabolic disease progression**
 
-# Brief project description
+# Brief project description (max 2000 characters including spaces. Current count: 2088)
 
-This project investigates the role of natural incretin and glucagon responses as drivers of progression toward diabetes and diabetes-related complications.
+People at high risk of type 2 diabetes are not currently being systematically identified, primarily because of variation in who progresses to diabetes. This project investigates the causal role of natural incretin and glucagon responses, aiming to identify the primary drivers of progression toward diabetes and diabetes related complications. The project will use the deep phenotyped data in the Fenland Study.
 
-People at high risk of type 2 diabetes are not currently being systematically captured, primarily due to heterogeneity in who progresses to diabetes. Many of the driving and compensatory protective mechanisms involved in the development of type 2 diabetes and its related complications remain to be uncovered. Evidence from cohort studies on the long-term consequences of disrupted natural incretin and glucagon responses remains limited.
+The Fenland Study is well suited as the selected database because it combines OGTT based incretin and glucagon measurements, genetics, proteomics, metabolomics, DEXA derived adiposity, liver function biomarkers, and long term cardiometabolic outcomes in a general population cohort. The study includes three phases of examination from 2005 to 2025, which allows for the assessment of individual trajectories in cardiometabolic risk. We will validate findings in the Danish ADDITION PRO study and the UK Biobank.
+The project is divided into three parts. First, using traditional and newer methods of causal inference, including genetically predicted and phenotypically measured traits, we aim to determine the causal relationship between incretin and glucagon responses and long term cardiometabolic outcomes and to identify mediating pathways such as liver health, inflammation and metabolite profiles. Second, we will investigate incretin and glucagon responses together with metabolic traits that contribute to heterogeneity in metabolic dysfunction risk, such as liver health and inflammation, and aim to clarify the impact of each metabolic trait on long term cardiometabolic risk. Third, we will identify and predict machine learning based metabolic clusters using clinical and omics data.
 
-**Choice of database**
+By using new epidemiological methods to characterize individual risk of progression toward cardiometabolic disease, and by clarifying the causal role of natural incretin and glucagon release, including important mediating pathways, this proposal aims to help identify individuals with the greatest potential benefit from early intensive intervention and to pinpoint targetable biomarkers.
 
-This proposal project investigates a missing piece in the puzzle the role of natural incretin and glucagon, aiming to identify the primary drivers of progression toward diabetes and diabetes-related complications. The project will leverage the deep-phenotyped data in the Fenland study.
+# Lay project description (max 1000 characters including spaces. Current count: 637)
 
-The Fenland Study (MRC Epidemiology Unit, UK) is uniquely suited as the selected database because it combines OGTT-based incretin and glucagon measurements, genetics, proteomics, metabolomics, DEXA-derived adiposity, liver function biomarkers, and long-term cardiometabolic outcomes in a general population. The study includes three phases of examination during 2005-2025, allowing for the assessment of individual trajectories in cardiometabolic risk. We will validate findings in ADDITION-PRO (Danish cohort) linked to the Danish registries and UK Biobank (external validation), where applicable.
+Type 2 diabetes develops differently from person to person, and today we cannot easily identify who is most at risk. This project uses data from the large Fenland Study to understand how two natural gut hormones, incretin and glucagon, influence the body’s ability to control blood sugar. By combining hormone measurements with information on liver health, body fat, inflammation, genes and metabolism, we aim to discover why some people progress to diabetes or other cardiometabolic diseases while others do not. The project will also create simple tools that can help identify people who may benefit from early and targeted prevention.
 
-The project is divided into two parts: (1) Using traditional and newer methods of causal inference, including genetic predicted and phenotypic measures, we aim to determine the causal relationship between incretin and glucagon and long-term cardiometabolic outcomes and to identify mediating pathways such as liver health, inflammation and metabolites. (2) We will investigate incretin and glucagon responses in conjunction with current metabolic traits of heterogeneity in the risk of metabolic dysfunction, such as liver health and inflammation, and aim to decipher the impact of each metabolic trait on long-term cardiometabolic risk. (3) provide machine-learning metabolic clusters using clinical and omics data. (4) Predict clusters based on traditional clinical markers and genetic data.
-
-By using novel epidemiological methods to characterize individuals’ risk of progression toward cardiometabolic disease and elucidating the causal role of natural incretin and glucagon release, including mediating pathways, this proposal aims to advance the prevention of type 2 diabetes. This approach will help identify those with the greatest potential benefit from early intensive intervention and pinpoint targetable biomarkers.
-
-# Project description
+# Project description (max 20,000 characters including spaces. Current count: 36,000)
 
 ## Specific aim
 
