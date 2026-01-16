@@ -14,10 +14,7 @@ This letter confirms that the Fenland Study (managed by the MRC
 Epidemiology Unit, University of Cambridge) supports the research
 proposal:
 
-\
-“Metabolic Signatures in Pre‑Diabetes: Decoding Incretin and Glucagon
-Pathways and Their Interaction with Metabolic Traits in Cardiometabolic
-Disease Progression.”\
+*Metabolic Signatures: Decoding Incretin and Glucagon Pathways and Their Interaction with Metabolic Traits in Cardiometabolic Disease Progression.*\
 
 **1.  Confirmation of Suitability, Feasibility, and Appropriateness of the Fenland Study Data**\
     The management team of the Fenland Study confirms that the following
@@ -89,14 +86,14 @@ trajectories, mediation, clustering, and prediction models). No new
 participant‑level data will be collected, and all work will comply with
 existing ethical approvals.
 
-2.  **Commitment to No‑Payment Access (Conditional on Funding)**\
+2. **Commitment to No‑Payment Access (Conditional on Funding)**\
     If the project is funded under Inter‑SUSTAIN Part 2, the Fenland
     Study commits to providing no‑payment access to the above‑listed
     data types, in accordance with its governance and data‑sharing
     policies. The study management confirms feasibility of data access
     within standard timelines.
 
-3.  **Incompatibilities or Limitations**\
+3. **Incompatibilities or Limitations**\
     The following limitations should be noted, none of which are
     expected to impede the proposed research:
 
@@ -105,8 +102,7 @@ existing ethical approvals.
 These limitations are standard for the cohort and do not affect the
 ability to carry out the analyses proposed.
 
-4.  **The project will generate following added value to the Fenland Study
-    :**\
+4. **The project will generate following added value to the Fenland Study:**\
 
 <!-- -->
 
