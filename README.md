@@ -42,7 +42,7 @@ To be considered complete, you must upload the following documents:
 3.  **Hosting Letter:** A signed letter from your home institution confirming they will provide the necessary space and resources. It must also state that your own salary is covered by other sources. ✅ Needs to be sent to Micheal at Aarhus University
 4.  **Letters of Support:** Required if you are collaborating with other research groups. ✅ Needs to be sent to Nick and Simon at MRC
 5.  **Biobank Agreement:** Only required if your project uses physical samples (e.g., a Material Transfer Agreement).  - Are not needed
-
+6.  **Budget:** ✅ Are written. Needs to be sent to AU Micheal together with Hosting Letter. Project supplement cost are high. We need to decide where to cut.
 ---
 
 ## Important Deadlines
