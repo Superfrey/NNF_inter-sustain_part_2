@@ -38,10 +38,10 @@ In your main Project Description, you must include a specific section with the h
 ## Required Attachments (PDF only)
 To be considered complete, you must upload the following documents:
 
-1.  **Letter of Commitment from Database:** A signed document from the database management confirming they will provide data access at no cost if you are funded.
-2.  **Hosting Letter:** A signed letter from your home institution confirming they will provide the necessary space and resources. It must also state that your own salary is covered by other sources.
-3.  **Letters of Support:** Required if you are collaborating with other research groups.
-4.  **Biobank Agreement:** Only required if your project uses physical samples (e.g., a Material Transfer Agreement).
+1.  **Letter of Commitment from Database:** A signed document from the database management confirming they will provide data access at no cost if you are funded. ✅ Needs to be sent to MRC
+3.  **Hosting Letter:** A signed letter from your home institution confirming they will provide the necessary space and resources. It must also state that your own salary is covered by other sources. ✅ Needs to be sent to Micheal at Aarhus University
+4.  **Letters of Support:** Required if you are collaborating with other research groups. ✅ Needs to be sent to Nick and Simon at MRC
+5.  **Biobank Agreement:** Only required if your project uses physical samples (e.g., a Material Transfer Agreement).  - Are not needed
 
 ---
 
