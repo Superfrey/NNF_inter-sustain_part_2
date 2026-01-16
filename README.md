@@ -49,12 +49,21 @@ In your main Project Description, you must include a specific section with the h
 
 To be considered complete, you must upload the following documents:
 
+<<<<<<< HEAD
 1.  **Letter of Commitment from Database:** A signed document from the database management confirming they will provide data access at no cost if you are funded. ✅ Needs to be sent to MRC (<https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/letter_of_commitment.md>)
 2.  **Hosting Letter:** A signed letter from your home institution confirming they will provide the necessary space and resources. It must also state that your own salary is covered by other sources. ✅ Needs to be sent to Micheal at Aarhus University (<https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/host_letter.md>)
 3.  **Letters of Support:** Required if you are collaborating with other research groups. ✅ Needs to be sent to Nick and Simon at MRC (<https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/Support_letter_MRC.qmd>)
 4.  **Biobank Agreement:** Only required if your project uses physical samples (e.g., a Material Transfer Agreement). - Are not needed
 
 ------------------------------------------------------------------------
+=======
+1.  **Letter of Commitment from Database:** A signed document from the database management confirming they will provide data access at no cost if you are funded. ✅ Needs to be sent to MRC
+3.  **Hosting Letter:** A signed letter from your home institution confirming they will provide the necessary space and resources. It must also state that your own salary is covered by other sources. ✅ Needs to be sent to Micheal at Aarhus University
+4.  **Letters of Support:** Required if you are collaborating with other research groups. ✅ Needs to be sent to Nick and Simon at MRC
+5.  **Biobank Agreement:** Only required if your project uses physical samples (e.g., a Material Transfer Agreement).  - Are not needed
+6.  **Budget:** ✅ Are written. Needs to be sent to AU Micheal together with Hosting Letter. Project supplement cost are high. We need to decide where to cut.
+---
+>>>>>>> fbb26e46b86a050ca5b5b6f96935d0f59ff7a052
 
 ## Important Deadlines
 
