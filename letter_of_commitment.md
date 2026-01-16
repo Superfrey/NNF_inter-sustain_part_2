@@ -1,10 +1,6 @@
----
+
 title: "Letter of Commitment – Fenland Study"
-output: html_document
-editor_options: 
-  markdown: 
-    wrap: 72
----
+
 
 MRC Epidemiology Unit, University of Cambridge\
 
