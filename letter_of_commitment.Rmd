@@ -1,0 +1,145 @@
+---
+title: "Letter of Commitment – Fenland Study"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+MRC Epidemiology Unit, University of Cambridge\
+
+To whom it may concern,
+
+This letter confirms that the Fenland Study (managed by the MRC
+Epidemiology Unit, University of Cambridge) supports the research
+proposal:
+
+\
+“Metabolic Signatures in Pre‑Diabetes: Decoding Incretin and Glucagon
+Pathways and Their Interaction with Metabolic Traits in Cardiometabolic
+Disease Progression.”\
+
+**1.  Confirmation of Suitability, Feasibility, and Appropriateness of the Fenland Study Data**\
+    The management team of the Fenland Study confirms that the following
+    data requested in the proposal are available, suitable, feasible to
+    access, and appropriate for the scientific aims of the project:
+
+Requested data types (available and accessible in Fenland)
+
++-----------------------------------------+-----------------------+
+| **Category**                            | **Requested Data**    |
++=========================================+=======================+
+| **OGTT‑based hormonal and metabolic     | Glucose, Insulin,     |
+| measurements**                          | GLP‑1, GIP, Glucagon  |
+|                                         | (0, 120 min)          |
++-----------------------------------------+-----------------------+
+| **Clinical phenotyping and biomarkers** | Anthropometrics       |
+|                                         |                       |
+|                                         | Blood pressure        |
+|                                         |                       |
+|                                         | Lipids (fasting)      |
+|                                         |                       |
+|                                         | Liver markers         |
+|                                         |                       |
+|                                         | -   (ALT, AST, GGT,   |
+|                                         |     ALP,              |
+|                                         |     glucagon–alanine  |
+|                                         |     index);           |
+|                                         |                       |
+|                                         | Inflammation markers  |
+|                                         |                       |
+|                                         | -   (IL‑6, hsCRP,     |
+|                                         |     adiponectin)      |
++-----------------------------------------+-----------------------+
+| **Imaging and body‑composition data**   | DEXA body‑composition |
+|                                         | (visceral &           |
+|                                         | subcutaneous fat)     |
+|                                         |                       |
+|                                         | Liver ultrasound      |
+|                                         | imaging               |
++-----------------------------------------+-----------------------+
+| **Metabolomics**                        | Targeted metabolomics |
+|                                         | (175 acylcarnitines,  |
+|                                         | amines,               |
+|                                         | sphingolipids,        |
+|                                         | phospholipids)        |
++-----------------------------------------+-----------------------+
+| **Genetic data**                        | Genome‑wide           |
+|                                         | genotyping            |
++-----------------------------------------+-----------------------+
+| **Long‑term follow‑up outcomes**        | Incident type 2       |
+|                                         | diabetes              |
+|                                         |                       |
+|                                         | Macrovascular events  |
+|                                         | (IHD, heart failure)  |
+|                                         |                       |
+|                                         | Microvascular         |
+|                                         | complications (CKD)   |
+|                                         |                       |
+|                                         | Mortality             |
+|                                         |                       |
+|                                         | Repeated phenotypic   |
+|                                         | data from Phase 2 &   |
+|                                         | Phase 3               |
++-----------------------------------------+-----------------------+
+
+The Fenland Study confirms that these data align with the needs of the
+proposed analytical framework (causal inference, longitudinal
+trajectories, mediation, clustering, and prediction models). No new
+participant‑level data will be collected, and all work will comply with
+existing ethical approvals.
+
+2.  **Commitment to No‑Payment Access (Conditional on Funding)**\
+    If the project is funded under Inter‑SUSTAIN Part 2, the Fenland
+    Study commits to providing no‑payment access to the above‑listed
+    data types, in accordance with its governance and data‑sharing
+    policies. The study management confirms feasibility of data access
+    within standard timelines.
+
+3.  **Incompatibilities or Limitations**\
+    The following limitations should be noted, none of which are
+    expected to impede the proposed research:
+
+    -   [Please add any limitations]
+
+These limitations are standard for the cohort and do not affect the
+ability to carry out the analyses proposed.
+
+4.  **The project will generate following added value to the Fenland Study
+    :**\
+
+<!-- -->
+
+a)  Reproducible Methods
+
+-   Causal inference models including pathway‑specific mediation\
+-   Machine‑learning‑based prediction models\
+
+b)  Harmonisation workflows between Fenland, ADDITION‑PRO, and UK
+    Biobank
+
+-   All workflow code (including data processing, analysis, and
+    validation) will be published on GitHub for sharing reproducible
+    workflow.
+
+c)  These outputs will enrich the utility of the Fenland data and
+    contribute to future precision‑prevention research, including:
+
+-   Derived metabolic trait clusters, providing improved
+    characterisation of metabolic heterogeneity across individuals in the Fenland study.
+-   Identification of causal genotypes, metabolites, and phenotypes that influence cardiometabolic disease risk.
+
+**Status of Applicant and Collaborators as Users of the Database**\
+The Principal Investigator (Daniel R. Witte) and collaborating Danish
+partners are new users of the Fenland Study.
+
+**Statement of Support:**\
+The Fenland Study management confirms full support for this project and
+its scientific, ethical, and practical feasibility.\
+
+Signed,
+
+xxxx\
+Management of the Fenland Study\
+MRC Epidemiology Unit\
+University of Cambridge\

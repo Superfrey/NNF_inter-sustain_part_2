@@ -15,7 +15,7 @@ library(knitr) # Required for nice tables in MD
 # --- 1. SETTINGS ---
 project_years <- c(2027, 2028, 2029)
 inflation_rate <- 0.03
-project_supplement_rate <- 257000 
+project_supplement_rate <- 250000 
 
 # --- 2. CALCULATION EXPENSES ---
 budget_data <- tibble(year = project_years) %>%
@@ -117,7 +117,7 @@ PhD Student (1.0 FTE): Will focus on sub-aims 1 and 2 of the project. A PhD Tuit
 
 2. Operating Expenses
 
-Smaller Equipment (DKK 100,000/year): This allocation covers the purchase of high-performance computing (HPC) workstations required for handling large-scale datasets and specialized software licenses for epidemiological modeling.
+Smaller Equipment (DKK 100,000/year): This allocation covers the purchase of high-performance computing xx or other? [Has to be defined]
 
 Travel (DKK 20,000/year): Funds are requested for the Postdoc and PhD student to present research findings at major international conferences (e.g., EASD or ADA) and for project coordination meetings with international collaborators at MRC Epidemiology unit at Cambridge University. This is within the DKK 25,000 annual cap.
 
