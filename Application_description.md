@@ -109,20 +109,23 @@ These PRSs will be incorporated into the aforementioned predictive layers as com
 ## Study description
 # Study Comparison: Fenland vs. ADDITION-PRO
 
-| Feature | Fenland Study | ADDITION-PRO Study |
+# Study Comparison: Fenland vs. ADDITION-PRO
+
+| Feature | Fenland study | ADDITION-PRO Study |
 | :--- | :--- | :--- |
-| **Baseline Period** | 2005-2015 (Phase 1) | 2009–2011 |
-| **Follow-up** | 2014-2020 (Phase 2), 2023-2025 (Phase 3) | Danish National Registries (up to 2024) |
-| **Follow-up Period** | 10-15 years | 13-years |
-| **Participants** | UK general population aged 30-55 years | Individuals at high risk of diabetes |
-| **Number** | 12,435 | 2,082 |
-| **OGTT Measures** | GLP-1, GIP, glucagon, glucose and insulin (t= 0, 120 min) | GLP-1, GIP, glucagon, glucose and insulin (t= 0, 30, 120 min) [@færch2015; @færch2016; @johansen2012] |
-| **Metabolic Measures** | **Adiposity (DEXA):** Visceral/Subcutaneous fat, Bone density. **Liver:** Ultrasound, GGT, ALT, glucagon-alanine index, Alk. Phosphatase. **Inflammation:** IL-6, hs-CRP, adiponectin. | **Adiposity:** Visceral/Subcutaneous fat (ultrasound), adiponectin. **Liver:** Ultrasound (B-mode), GGT, ALT, glucagon-alanine index. **Inflammation:** soluble CD163, hs-CRP. |
-| **Metabolites** | 175 (acylcarnitines, amines, sphingolipids and phospholipids) | 231 lipid-related and 3 BCAA (fasting isoleucine, leucine and valine levels) |
-| **Assessment** | LC electrospray ionization and flow-injection analysis tandem MS | Proton NMR spectroscopy, targeted metabolomics [@mahendran2017] |
-| **Sample Tissue** | Fasting plasma blood samples | Both fasting and during the OGTT [@buckley2017; @mahendran2017] |
+| **Baseline data collection period** | 2005-2015 (Phase 1) | 2009–2011 |
+| **Follow-up** | 2014-2020 (Phase 2)<br>2023-2025 (Phase 3) | Danish National Registries (up to 2024) |
+| **Included participants** | UK general population aged 30-55 years | Individuals at high risk of diabetes |
+| **Number of participants** | 12,435 | 2,082 |
+| **Measure from OGTT** | GLP-1, GIP, glucagon, glucose and insulin (t= 0, 120 min) | GLP-1, GIP, glucagon, glucose and insulin (t= 0, 30, 120 min)[@færch2015; @færch2016; @johansen2012] |
+| **Other relevant metabolic measures** | **Adiposity from DEXA scan:**<br>- Visceral and subcutaneous fat<br>- Bone density<br><br>**Liver function:**<br>- Ultrasound liver images<br>- GGT, ALT<br>- glucagon – alanine index<br>- Alkaline Phosphatase<br><br>**Inflammation:**<br>- Interleukin 6 (IL-6), high sensitivity C-reactive protein, adiponectin | **Adiposity:**<br>- Visceral and subcutaneous fat from ultrasonography<br>- adiponectin<br><br>**Liver function:**<br>- Ultrasound liver images (still B-mode images with liver protocol)<br>- GGT, ALT<br>- glucagon – alanine index<br><br>**Inflammation:**<br>- soluble CD163, and high sensitivity C-reactive protein |
+| **Assessment method of metabolites** | LC electrospray ionization and flow-injection analysis tandem MS (ref), targeted metabolomics | Proton nuclear magnetic resonance spectroscopy, targeted metabolomics [@mahendran2017] |
+| **Sample tissue** | Fasting plasma blood samples | Both fasting and during the OGTT[@buckley2017; @mahendran2017] |
+| **Number of metabolites** | 175 (acylcarnitines, amines, sphingolipids and phospholipids) | 231 lipid-related and 3 BCAA (fasting isoleucine, leucine and valine levels) |
 | **Genotyping** | Yes | Yes |
-| **Outcomes** | **Metabolic:** T2D progression, Normoglycemia regression, Trajectories (Glucose, lipids, kidney, inflammation, adiposity). **Macro:** Ischemic CVD, Heart failure. **Micro:** CKD. | **Metabolic:** T2D progression, Normoglycemia regression, Trajectories (Glucose, lipids, kidney). **Macro:** Ischemic CVD, Heart failure. **Micro:** CKD. |
+| **Follow-up period** | 10-15 years | 13-years |
+| **Outcome** | **Metabolic-related outcomes:**<br>- Progression to type 2 diabetes<br>- Regression to normoglycemia<br>- Glucose, lipids and kidney function, inflammation, adiposity trajectories<br><br>**Macrovascular complications:**<br>- Ischemic-related cardiovascular disease<br>- Heart failure<br><br>**Microvascular complications:**<br>- Chronic kidney disease | **Metabolic-related outcomes:**<br>- Progression to type 2 diabetes<br>- Regression to normoglycemia<br>- Glucose, lipids and kidney function trajectories<br><br>**Macrovascular complications:**<br>- Ischemic-related cardiovascular disease<br>- Heart failure<br><br>**Microvascular complications:**<br>- Chronic kidney disease |
+
 To extend findings and predicted characterizations in larger population-based cohorts, will use ADDITION-PRO Study[@johansen2012] and UK Biobank[@bycroft2018] and as validation cohorts.
 
 ![**Figure 3: Gantt chart**](figures/gant_diagram.pdf){width="8in"}
