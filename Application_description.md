@@ -106,7 +106,7 @@ To predict incretin and glucagon responses based on clinical and metabolite data
 
 As part of the collaboration with the MRC Epidemiology Unit and Novo Nordisk Foundation Center for Basic Metabolic Research, current efforts are focused on developing PRS for GLP-1, GIP, and glucagon. These PRSs will be incorporated into the aforementioned predictive layers as composite predictors of incretin and glucagon responses. PRS for other relevant traits such as obesity, insulin resistance, beta-cell function, liver function and low-grade inflammation will also be considered where relevant.
 
-## Research design and methods
+## Study description
 
 +-----------------------------------+-----------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
 |                                   | # **Fenland study**                                                                           | # **ADDITION-PRO Study**                                                                             |
@@ -175,7 +175,7 @@ To extend findings and predicted characterizations in larger population-based co
 
 The synergy between this project and the MRC Epidemiology Unit lies in the integration of deep-phenotyped metabolic data with large-scale population health surveillance. The MRC Epidemiology Unit provides an environment for precision epidemiology. By combining the Unit’s global leadership in studying the genetic and environmental determinants of obesity and type 2 diabetes with the projects focus on natural incretin and glucagon responses, we create a powerful framework to move from observational data to causal understanding. This collaboration allows for the cross-pollination of Danish clinical depth and the UK’s extensive population-based datasets, ensuring that findings regarding metabolic drivers are both biologically robust and representative of the broader population.
 
-The MRC Epidemiology Unit, through the mentorship of experts in the Fenland Study including Professor NIcholas Wareham and Professor Simon Griffin, will serve as the primary international host and scientific advisor. Their role will encompass three key areas:
+The MRC Epidemiology Unit, through the mentorship of experts in the Fenland Study including Professor Nicholas Wareham and Professor Simon Griffin, will serve as the primary international host and scientific advisor. Their role will encompass three key areas:
 
 **1. Data Provision and Oversight:** Granting access to the Fenland Study (n = 12,435) and providing training to ensure a comprehensive understanding of the cohort and its data.
 
@@ -187,8 +187,12 @@ The synergy with the MRC Epidemiology Unit will be an ongoing institutional brid
 
 ## Significance of the project
 
-The Inter-SUSTAIN project supports the development of a precision approach to pre-diabetes by identifying a set of easily obtainable biomarkers that optimally distinguish individuals with a high probability of stable pre-diabetes or remission from those at greatest risk of progressing to diabetes. This work aligns with the objectives of the Novo Nordisk Foundation-funded Steno National grant, specifically [Work Package 3 (Heterogeneity) in the new DP-Next](https://dp-next.github.io/wp3.html), which aims to develop new strategies for diabetes prevention by identifying predictive metabolic traits[@witte2025].
+The Inter-SUSTAIN project supports the development of a precision approach to prevention of diabetes by identifying a set of easily obtainable biomarkers that optimally distinguish individuals with a high probability of stable pre-diabetes or remission from those at greatest risk of progressing to diabetes. This work aligns with the objectives of the Novo Nordisk Foundation-funded Steno National grant, [DP-Next](https://dp-next.github.io), specifically [Work Package 3 (Heterogeneity)](https://dp-next.github.io/wp3.html), which aims to develop new strategies for diabetes prevention by identifying metabolic traits that are predictive and potentially preventable [@witte2025].
 
 The Fenland Study offers a unique opportunity through its long-term follow-up data to enable the identification of clinical and biological metabolic traits that characterize individuals at high risk of developing type 2 diabetes and related complications. Furthermore, these traits can be linked to longitudinal changes in cardiometabolic and inflammatory profiles, allowing for the identification of individuals with accelerated progression toward cardiometabolic complications. These insights support the timely identification of high-risk individuals who may benefit from early interventions, such as intensive lifestyle modifications or targeted pharmacological treatments.Our work will deepen understanding of heterogeneity in the risk of type 2 diabetes and provide clinical and genetic tools tools to enable further cohorts and registries to investigate variability in response to interventions. Ultimately, theese aims to contribute to precision prevention approaches by enhancing tailored decision-making that improves outcomes and reduces the burden of cardiometabolic disease.
 
 ![**Figure 3: Gantt chart**](figures/gant_diagram.pdf){width="8in"}
+
+\newpage
+
+# References
