@@ -8,6 +8,30 @@ bibliography: references.bib
 csl: the-lancet.csl
 ---
 
+# Abrrevations
+
+ALP: Alkaline Phosphatase
+ALT: Alanine Aminotransferase
+AST: Aspartate Aminotransferase
+BCAA: Branched-Chain Amino Acids
+CRP: C-Reactive Protein
+DAG: Directed Acyclic Graph
+DEXA: Dual-Energy X-ray Absorptiometry
+GGT: Gamma-Glutamyl Transferase
+GIP: Gastric Inhibitory Polypeptide
+GLP-1: Glucagon-Like Peptide 1
+IL-6: Interleukin 6
+IRR: Incidence Rate Ratio
+LC-MS/MS: Liquid Chromatography–Mass Spectrometry/Mass Spectrometry
+MAFLD: Metabolic Associated Fatty Liver Disease
+MR: Mendelian Randomization
+NMR: Nuclear Magnetic Resonance
+OGTT: Oral Glucose Tolerance Test
+PCA: Principal Component Analysis
+PRS: Polygenic Risk Score
+UMAP: Uniform Manifold Approximation and Projection
+
+
 # Project title
 
 **Metabolic Signatures: Decoding incretin and glucagon pathways and their interaction with metabolic traits in cardiometabolic disease progression**
@@ -76,7 +100,7 @@ Obesity and insulin resistance have long been regarded as central components in 
 
 \[Deep learning proccessing of ultrasound images\] In conjunction with liver function biomarkers, this will enable the calculation of a general indication of liver health.
 
-We will further integrate dimensions of metabolically relevant low-grade inflammation by integrating markers of Interleukin 6 (IL-6), adiponectin, and C-reactive protein [@deichgræber2016] in our multidimensional characterization of liver health. In addition, fasting acylcarnitines, amines, sphingolipids and phospholipids were obtained in Fenland study. These data allow us to characterize aspects of metabolic function, such as liver fat accumulation[@gnatiucfriedrichs2023]and tissue-specific insulin resistance [@vogelzangs2020; @beyene2020] .
+We will further integrate dimensions of metabolically relevant low-grade inflammation by integrating markers of Interleukin 6 (IL-6), adiponectin, and C-reactive protein (CRP) [@deichgræber2016] in our multidimensional characterization of liver health. In addition, fasting acylcarnitines, amines, sphingolipids and phospholipids were obtained in Fenland study. These data allow us to characterize aspects of metabolic function, such as liver fat accumulation[@gnatiucfriedrichs2023]and tissue-specific insulin resistance [@vogelzangs2020; @beyene2020] .
 
 Based on phenotypes, metabolites, and genotypes, we want to identify metabolic traits that, in conjunction with incretin and glucagon responses, contribute to cardiometabolic risk. Machine learning–based dimensionality reduction techniques help identify and characterize distinct constellations of metabolic traits across individuals. From phenotypic clusters, we want to map dimensions of metabolic function that either provide compensatory protection against or contribute to cardiometabolic disease. Then, we will add dimensions of metabolite-based profiles to the existing clusters to enhance their characterization.
 
@@ -86,9 +110,7 @@ To support phenotypic clustering, genetic data will be incorporated through part
 
 ### Research design and methods
 
-We use data from previous work in The Fenland study and ADDITION-PRO, including genotypes, metabolomic profiles, and markers of metabolism and inflammation [@mahendran2017; @buckley2017; @deichgræber2016; @johansen2012; @færch2015; @færch2016; @madsen2024].
-
-Combined with liver function biomarkers, this approach will enable us to generate a general, multidimensional indication of liver health.
+We use data from previous work in The Fenland study and ADDITION-PRO, including genotypes, metabolomic profiles, and markers of metabolism and inflammation [@mahendran2017; @buckley2017; @deichgræber2016; @johansen2012; @færch2015; @færch2016; @madsen2024]. By combing different liver function biomarkers from images and blood measurements, we will be enable to generate a general, multidimensional indication of liver health.
 
 We will apply PCA and UMAP to integrate variables and identify a restricted number of metabolic dimensions that reflect the interplay between incretin and glucagon responses along with concurrent glucose-insulin dynamics during the OGTT[@zhou2024]. We will further add dimensions of obesity, insulin resistance, inflammation, liver health markers, subsequently examine these dimensions in relation to diabetes risk[@healy2024]. Finally, metabolite-based profiles and partitioned PRS will be analyzed separately in relation to cardiometabolic outcomes and subsequently incorporated to enrich the dimensional metabolic profiling.
 
@@ -136,9 +158,9 @@ These PRSs will be incorporated into the aforementioned predictive layers as com
 |                                   | -   glucagon – alanine index                                                                  |                                                                                                      |
 |                                   | -   Alkaline Phosphatase                                                                      | Inflammation:                                                                                        |
 |                                   |                                                                                               |                                                                                                      |
-|                                   | Inflammation:                                                                                 | -   soluble CD163, , and high sensitivity C-reactive protein                                         |
+|                                   | Inflammation:                                                                                 | -   soluble CD163, , and high sensitivity CRP                                         |
 |                                   |                                                                                               |                                                                                                      |
-|                                   | -   Interleukin 6 (IL-6), high sensitivity C-reactive protein, adiponectin                    |                                                                                                      |
+|                                   | -   Interleukin 6 (IL-6), high sensitivity CRP, adiponectin                    |                                                                                                      |
 +-----------------------------------+-----------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
 | Assessment method of metabolites  | LC electrospray ionization and flow-injection analysis tandem MS (ref), targeted metabolomics | Proton nuclear magnetic resonance spectroscopy, targeted metabolomics [@mahendran2017]               |
 +-----------------------------------+-----------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
@@ -183,7 +205,7 @@ The Fenland Study offers a unique opportunity through its long-term follow-up da
 
 The synergy between this project and the MRC Epidemiology Unit lies in the integration of deep-phenotyped metabolic data with large-scale population health surveillance. The MRC Epidemiology Unit provides an environment for precision epidemiology. By combining the Unit’s global leadership in studying the genetic and environmental determinants of obesity and type 2 diabetes with the projects focus on natural incretin and glucagon responses, we create a powerful framework to move from observational data to causal understanding. This collaboration allows for the cross-pollination of Danish clinical depth and the UK’s extensive population-based datasets, ensuring that findings regarding metabolic drivers are both biologically robust and representative of the broader population.
 
-The MRC Epidemiology Unit, through the mentorship of experts in the Fenland Study including Professor Nicholas Wareham and Professor Simon Griffin, will serve as the primary international host and scientific advisor. Their role will encompass three key areas:
+The MRC Epidemiology Unit, through the mentorship of experts in the Fenland Study, including Professor Nicholas Wareham and Professor Simon Griffin, will serve as the primary international host and scientific advisor. Their role, together with their research teams, will encompass three key areas:
 
 **1. Data Provision and Oversight:** Granting access to the Fenland Study (n = 12,435) and providing training to ensure a comprehensive understanding of the cohort and its data.
 
