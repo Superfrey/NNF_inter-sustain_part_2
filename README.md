@@ -8,14 +8,14 @@ The application must be written in **English** and submitted through the **NORMA
 
 # Application Requirements Summary
 
-| Section                 | Maximum Length    | Key Requirements                                                                                                                                                                                                           |
-|:------------------------|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CV**                  | 4,000 characters  | Include ORCID ID and publication metrics (H-index).                                                                                                                                                                        |
-| **Publication List**    | 5,000 characters  | List your 10 most relevant publications.                                                                                                                                                                                   |
-| **Brief Description**   | 2,000 characters  | A stand-alone summary of your goals and methods.<br>[Draft Link](https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/application_description_NNF_format.qmd)                                                              |
+| Section                 | Maximum Length    | Key Requirements                                                                                                                                                                                                                       |
+|:------------------------|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **CV**                  | 4,000 characters  | Include ORCID ID and publication metrics (H-index).                                                                                                                                                                                    |
+| **Publication List**    | 5,000 characters  | List your 10 most relevant publications.                                                                                                                                                                                               |
+| **Brief Description**   | 2,000 characters  | A stand-alone summary of your goals and methods.<br>[Draft Link](https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/application_description_NNF_format.qmd)                                                               |
 | **Project Description** | 20,000 characters | Detailed research plan, state-of-the-art, and feasibility.<br>[Draft Link](https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/application_description_NNF_format.qmd)<br>• *Note: Feasibility and Gantt chart need work.* |
 | **Lay Description**     | 1,000 characters  | A non-technical summary for the general public.<br>[Draft Link](https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/application_description_NNF_format.qmd)                                                                |
-| **Literature**          | 8,000 characters  | References for the research plan (First author + et al.).                                                                                                                                                                  |
+| **Literature**          | 8,000 characters  | References for the research plan (First author + et al.).                                                                                                                                                                              |
 
 ## Critical Content Requirements
 
