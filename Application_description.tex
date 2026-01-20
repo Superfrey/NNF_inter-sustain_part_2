@@ -1,0 +1,1137 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, frame hidden, breakable, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced]}{\end{tcolorbox}}\fi
+
+\hypertarget{abrrevations}{%
+\section{Abrrevations}\label{abrrevations}}
+
+ALP: Alkaline Phosphatase ALT: Alanine Aminotransferase AST: Aspartate
+Aminotransferase BCAA: Branched-Chain Amino Acids CRP: C-Reactive
+Protein DAG: Directed Acyclic Graph DEXA: Dual-Energy X-ray
+Absorptiometry GGT: Gamma-Glutamyl Transferase GIP: Gastric Inhibitory
+Polypeptide GLP-1: Glucagon-Like Peptide 1 IL-6: Interleukin 6 IRR:
+Incidence Rate Ratio LC-MS/MS: Liquid Chromatography--Mass
+Spectrometry/Mass Spectrometry MAFLD: Metabolic Associated Fatty Liver
+Disease MR: Mendelian Randomization NMR: Nuclear Magnetic Resonance
+OGTT: Oral Glucose Tolerance Test PCA: Principal Component Analysis PRS:
+Polygenic Risk Score UMAP: Uniform Manifold Approximation and Projection
+
+\hypertarget{project-title}{%
+\section{Project title}\label{project-title}}
+
+\textbf{Metabolic Signatures: Decoding incretin and glucagon pathways
+and their interaction with metabolic traits in cardiometabolic disease
+progression}
+
+\hypertarget{brief-project-description-max-2000-characters-including-spaces.-current-count-2088}{%
+\section{Brief project description (max 2000 characters including
+spaces. Current count:
+2088)}\label{brief-project-description-max-2000-characters-including-spaces.-current-count-2088}}
+
+People at high risk of type 2 diabetes are not currently being
+systematically identified, primarily because of variation in who
+progresses to diabetes. This project investigates the causal role of
+natural incretin and glucagon responses, aiming to identify the primary
+drivers of progression toward diabetes and diabetes related
+complications. The project will use the deep phenotyped data in the
+Fenland Study.
+
+The Fenland Study is well suited as the selected database because it
+combines OGTT based incretin and glucagon measurements, genetics,
+proteomics, metabolomics, DEXA derived adiposity, liver function
+biomarkers, and long term cardiometabolic outcomes in a general
+population cohort. The study includes three phases of examination from
+2005 to 2025, which allows for the assessment of individual trajectories
+in cardiometabolic risk. We will validate findings in the Danish
+ADDITION PRO study and the UK Biobank. The project is divided into three
+parts. First, using traditional and newer methods of causal inference,
+including genetically predicted and phenotypically measured traits, we
+aim to determine the causal relationship between incretin and glucagon
+responses and long term cardiometabolic outcomes and to identify
+mediating pathways such as liver health, inflammation and metabolite
+profiles. Second, we will investigate incretin and glucagon responses in
+conjunction with metabolic traits that contribute to heterogeneity in
+metabolic dysfunction risk, such as liver health and inflammation, and
+aim to decipher the impact of each metabolic trait on long term
+cardiometabolic risk. Third, we will identify and predict machine
+learning based metabolic clusters using clinical and omics data.
+
+By combining new epidemiological methods and machine learning techniques
+to characterize individual risk of progression toward cardiometabolic
+disease, and by clarifying the causal role of natural incretin and
+glucagon release, including important mediating pathways, this proposal
+aims to help identify individuals who have the greatest potential
+benefit from early intensive intervention and to pinpoint targetable
+biomarkers.
+
+\hypertarget{lay-project-description-max-1000-characters-including-spaces.-current-count-637}{%
+\section{Lay project description (max 1000 characters including spaces.
+Current count:
+637)}\label{lay-project-description-max-1000-characters-including-spaces.-current-count-637}}
+
+Type 2 diabetes develops differently from person to person, and today we
+cannot easily identify who is most at risk. This project uses data from
+the large Fenland Study to understand how two natural gut hormones,
+incretin and glucagon, influence the body's ability to control blood
+sugar. By combining hormone measurements with information on liver
+health, body fat, inflammation, genes and metabolism, we aim to discover
+why some people progress to diabetes or other cardiometabolic diseases
+while others do not. The project will also create simple tools that can
+help identify people who may benefit from early and targeted prevention.
+
+\hypertarget{project-description-max-20000-characters-including-spaces.-current-count-36000}{%
+\section{Project description (max 20,000 characters including spaces.
+Current count:
+36,000)}\label{project-description-max-20000-characters-including-spaces.-current-count-36000}}
+
+\hypertarget{specific-aim}{%
+\subsection{Specific aim}\label{specific-aim}}
+
+This Inter-SUSTAIN Part 2 project aims to use the Fenland study to
+elucidate the role of natural incretin and glucagon responses as drivers
+of heterogeneity in the long-term risk of diabetes and related
+complications, and to map clinical and biological traits associated with
+these responses, with particular emphasis on liver health, adiposity,
+and inflammation. In doing so, we aim to identify patterns of metabolic
+dysfunction that may predict progression to type 2 diabetes and inform
+personalized treatment strategies.
+
+The specific aims are to:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  Phenotypically and genotypically investigate the causal role of
+  natural incretin and glucagon responses to an oral glucose tolerance
+  test (OGTT) in determining the risk of regression to normoglycemia,
+  progression to type 2 diabetes, and the development of
+  diabetes-related complications. This will be conducted using data from
+  the Fenland study and the Danish ADDITION-PRO cohort, linked to
+  comprehensive outcomes from the Danish National Health Registries.
+\item
+  Identify metabolites and biomarkers for liver health, adiposity and
+  inflammation that mediate the association between phenotypically
+  measured (Fenland study, ADDITION-PRO) and genetically predicted
+  (Fenland study, ADDITION-PRO, UK Biobank) incretin and glucagon
+  responses and cardiometabolic outcomes, with particular emphasis on
+  direct and indirect markers of liver function.
+\item
+  Map dimensions of metabolic traits in conjunction with incretin and
+  glucagon responses to decipher their role in deteriorating glucose
+  metabolism and their relationship to long-term cardiometabolic health.
+\item
+  Predict clustered dimensions of metabolic traits using clinical
+  markers, metabolites, and genes.
+\end{enumerate}
+
+\hypertarget{background}{%
+\subsection{Background}\label{background}}
+
+Pre-diabetes is a complex state associated with increased risk of
+progression to type 2 diabetes and related
+complications\textsuperscript{1--3}. However, not all people with
+pre-diabetes progress to diabetes; many persist in the prediabetic state
+or regress to normoglycemia over the course of various
+years\textsuperscript{2}. Remission to normoglycemia has been shown to
+reduce the risk of cardiovascular morbidity and
+mortality\textsuperscript{4}, however, it remains unclear to which
+extend if the remission is driven by lifestyle changes or by a
+heterogeneous low-risk subgroup.
+
+Recently the idea of metabolic heterogeneity in type 2 diabetes has been
+extended to pre-diabetes, and traits that distinguish individuals most
+likely to progress to diabetes, such as insulin-resistant fatty liver
+and visceral adiposity-related renal dysfunction, have been
+identified\textsuperscript{1}. In recent years, incretins (Glucagon Like
+Peptide 1 {[}GLP 1{]} and Gastric Inhibitory Polypeptide {[}GIP{]}) and
+the hormone glucagon have gained increasing attention as targets in
+therapeutics for prevention of type 2 diabetes and diabetes-related
+complications\textsuperscript{5--9}. GLP-1 and GIP enhance post-meal
+insulin secretion, supporting efficient nutrient
+handling\textsuperscript{10}. Glucagon serves as a counter-regulatory
+hormone to insulin and maintains glucose balance both during fasting and
+following glucose intake\textsuperscript{11}. However, in the context of
+heterogeneity in pre-diabetes, the role of natural incretin and glucagon
+responses for the progression to type 2 diabetes and diabetes-related
+complications remains unexplored. Prior research in the Danish
+ADDITION-PRO study showed that, individuals with pre-diabetes and type 2
+diabetes exhibited up to 25\% lower natural GLP-1 responses to oral
+glucose\textsuperscript{12}. Additionally, impaired glucagon suppression
+and elevated fasting glucagon levels have been observed in individuals
+with insulin resistance and early glucose
+dysregulation\textsuperscript{13}, involving hepatic insulin resistance
+that impairs the turnover of branched-chain amino
+acids\textsuperscript{14}. However, these findings have not been limited
+investigated in relation to prospective cardiometabolic
+outcomes\textsuperscript{15}. A limitation of the ADDITION-PRO cohort is
+the selection of individuals at high risk of diabetes based on
+diabetes-specific risk scores, which limits the generalizability of the
+findings to the broader populations.
+
+The Fenland Study represents a pioneering population-based cohort that
+has substantially advanced the precision of identifying individuals at
+high risk of type 2 diabetes\textsuperscript{16} and elucidating causal
+pathways underlying cardiometabolic disease
+{[}\textsuperscript{17}{]}\textsuperscript{18}{[}\textsuperscript{19}{]}\textsuperscript{20}.
+Leveraging extensive phenotypic and genetic data, the study has
+established causal relationships between liver function markers, alanine
+aminotransferase (ALT), aspartate aminotransferase (AST), and alkaline
+phosphatase (ALP), and type 2 diabetes\textsuperscript{17}, as well as
+between Dual Energy X-ray Absorptiometry (DEXA) derived adiposity
+traits, fat-mass ratios, and metabolic dysfunction-associated liver
+disease\textsuperscript{20}. Moreover, Fenland data have uncovered
+mechanistic links between interleukin-6--mediated inflammation and type
+2 diabetes\textsuperscript{21}, highlighting the interplay between
+inflammatory and metabolic pathways. The cohort's precise
+characterization of adiposity, inflammation, and hepatic health,
+combined with detailed assessments of incretin, glucagon, insulin, and
+glucose dynamics in a general population, provides an unparalleled
+resource for investigating the constellation of metabolic traits and
+their long-term impact on cardiometabolic health.
+
+This project is grounded in the hypothesis that dysregulated incretin
+secretion and inadequate glucagon suppression, together with insulin
+resistance, accelerate the progression of metabolic dysfunction by
+activating hepatic and inflammatory pathways in individuals with at
+higher risk of diabetes.
+
+\hypertarget{work-package-1-investigate-causal-relationship-of-neutral-release-of-incretin-and-glucagon-and-long-term-cardiometabolic-disease-and-identify-mediating-pathways.}{%
+\subsection{Work Package 1: Investigate causal relationship of neutral
+release of incretin and glucagon and long-term cardiometabolic disease
+and identify mediating
+pathways.}\label{work-package-1-investigate-causal-relationship-of-neutral-release-of-incretin-and-glucagon-and-long-term-cardiometabolic-disease-and-identify-mediating-pathways.}}
+
+Hypothesis for Work Package 1: Natural incretin and glucagon responses
+play a causal role as drivers of the risk of progression from
+pre-diabetes to type 2 diabetes and diabetes-related complications as
+well influence cardiometabolic trajectories. In this pathway, biomarker
+and metabolites related to liver health play a mediating role.
+
+Natural incretin and glucagon reposes in epidemiological studies have
+been mostly investigated cross-sectionally, with a few
+exceptions\textsuperscript{15}. The Fenland study includes
+\textasciitilde12,000 individuals at baseline who underwent measurement
+of natural incretin and glucagon responses during a 2-point (0, 120 min)
+oral glucose tolerance test (OGTT) in 2005-2015, i.e.~before the
+introduction of incretin based therapies. This unique timing provides an
+opportunity to prospectively analyze the associations between
+individuals's natural hormonal responses to glucose and progression to
+diabetes, regression from prediabetes to normoglycemia, and risk of
+diabetes-related complications. Preliminary findings from ADDITION PRO
+in a population with high risk of diabetes showed that per SD higher
+glucagon (incidence rate ratio IRR: 1.38 CI: 1.15 to 1.67) and GLP-1
+responses (IRR: 1.34 CI: 1.05 to 1.71) at 120 minutes during the OGTT
+are associated with incident heart failure over an 11-year follow-up
+period.
+
+As part of the collaboration between the MRC Epidemiology Unit and Novo
+Nordisk Foundation Center for Basic Metabolic Research, a research group
+are currently developing PRS for GLP-1, GIP, and glucagon. Genetic
+variants, clinical biomarkers and metabolites serve as valuable
+indicators of individual predisposition for specific phenotypes and
+mediating pathways (metabolites and clinical biomarkers) that link
+phenotypes to disease outcomes. We want to use newly developed PRS to
+strengthen causal inference by applying them as instrumental variables
+in Mendelian randomization studies\textsuperscript{22}. Identification
+of metabolic pathways that mediate the effect of genetically determined
+phenotypes on the incidence of diseases such as type 2 diabetes helps us
+understand the biological mechanisms that link traits to disease. This
+understanding in turn supports the development of new targeted
+interventions based on metabolic pathways.
+
+\hypertarget{research-design-and-methods}{%
+\subsubsection{Research design and
+methods}\label{research-design-and-methods}}
+
+To quantify the causal relationship between incretins, glucagon and
+cardiometabolic disease, we will first apply traditional epidemiological
+time-to-event analysis methods (Poisson and Cox regression) within the
+Fenland Study, using adjustments informed by pathways outlined in
+directed acyclic graphs (DAGs). In addition, we aim to characterize
+trajectories of cardiometabolic profiles including glucose, lipids,
+kidney function, adiposity markers from DEXA, liver markers and
+inflammatory biomarkers using linear mixed effects models. Evaluating
+the risk associated with incretin and glucagon responses to a glucose
+load in isolation may be limited without considering concurrent insulin
+and glucose regulation. To address this in WP1, principal component
+analysis (PCA) and unifold manifold approximation and projection (UMAP)
+will be applied to extract the strongest sources of variance in the
+concurrent OGTT response across all 4 hormones and glucose.
+
+To strengthen causal inference and account for unmeasured confounding,
+we will conduct Mendelian randomization using pathway specific polygenic
+risk scores (PRS) as instruments for incretins and glucagon
+{[}@daveysmith2014{]}, leveraging data from the Fenland Study,
+ADDITION-PRO and the UK Biobank {[}@mrcepidemiologyunit{]}.
+
+To sequence mediating pathways and identify key metabolites linking
+incretin and glucagon responses to cardiometabolic disease, we will
+apply a structural causal algorithm (NetCoupler)\textsuperscript{23} to
+identify sequential causal pathways involving metabolites. Based on the
+identified metabolites, structured causal mediation
+analyses\textsuperscript{24} will be conducted to assess and quantify
+the direct and indirect effects of individual metabolites seen as most
+likely to be causal mediators in NetCoupler on cardiometabolic outcomes.
+
+\begin{figure}
+
+{\centering \includegraphics[width=8in,height=\textheight]{figures/DDEA_Proposal.pdf}
+
+}
+
+\caption{\textbf{Figure 1: Structured causal analysis framework of
+incretin and glucagon responses and their association with the risk of
+progression to cardiometabolic disease}}
+
+\end{figure}
+
+\hypertarget{work-package-2-to-map-dimensions-of-metabolic-traits-in-conjunction-with-incretin-and-glucagon-responses-in-order-to-decipher-their-role-in-the-context-of-deteriorated-glucose-metabolism}{%
+\subsection{Work Package 2: To map dimensions of metabolic traits in
+conjunction with incretin and glucagon responses, in order to decipher
+their role in the context of deteriorated glucose
+metabolism}\label{work-package-2-to-map-dimensions-of-metabolic-traits-in-conjunction-with-incretin-and-glucagon-responses-in-order-to-decipher-their-role-in-the-context-of-deteriorated-glucose-metabolism}}
+
+Hypothesis for Work Package 2: natural incretin and glucagon responses
+may exert protective, compensatory effects under conditions of obesity,
+hyperglycemia, insulin-resistance, and loss of beta-cell function. We
+further hypothesize that liver health and low-grade inflammation may act
+as an effect modifier in the associations between incretin-glucagon
+responses and metabolic outcomes.
+
+Obesity and insulin resistance have long been regarded as central
+components in the development of type 2 diabetes. Recent clustering
+analyses have identified liver fat as a main determinant heterogeneity
+among people with pre-diabetes with regard to their risk of progression
+to type 2 diabetes\textsuperscript{1}. Reduced liver function interacts
+with insulin resistance, glucose and glucagon responses, and is
+accompanied by low grade inflammation and morphological changes to the
+liver, particularly MAFLD (Metabolically Associated Fatty Liver
+Disease){[}\textsuperscript{25};\textsuperscript{26};\textsuperscript{11}{]}\textsuperscript{14}.
+The biological actions of GLP-1 and GIP include reducing hepatic
+inflammation\textsuperscript{27}. Liver function therefore appears to be
+a central pathway modulating diabetes risk and interacting with or
+mediating the impact of natural incretin and glucagon responses. The
+Fenland study includes baseline measurements of γ-glutamyl transferase
+and alanine transaminase, and 11,559 participants had
+DEXA\textsuperscript{28} performed allowing to estimate regional fat
+mass.
+
+{[}Deep learning proccessing of ultrasound images{]} In conjunction with
+liver function biomarkers, this will enable the calculation of a general
+indication of liver health.
+
+We will further integrate dimensions of metabolically relevant low-grade
+inflammation by integrating markers of Interleukin 6 (IL-6),
+adiponectin, and C-reactive protein (CRP)\textsuperscript{29} in our
+multidimensional characterization of liver health. In addition, fasting
+acylcarnitines, amines, sphingolipids and phospholipids were obtained in
+Fenland study. These data allow us to characterize aspects of metabolic
+function, such as liver fat accumulation\textsuperscript{30}and
+tissue-specific insulin resistance\textsuperscript{31,32} .
+
+Based on phenotypes, metabolites, and genotypes, we want to identify
+metabolic traits that, in conjunction with incretin and glucagon
+responses, contribute to cardiometabolic risk. Machine learning--based
+dimensionality reduction techniques help identify and characterize
+distinct constellations of metabolic traits across individuals. From
+phenotypic clusters, we want to map dimensions of metabolic function
+that either provide compensatory protection against or contribute to
+cardiometabolic disease. Then, we will add dimensions of
+metabolite-based profiles to the existing clusters to enhance their
+characterization.
+
+\begin{figure}
+
+{\centering \includegraphics[width=8in,height=\textheight]{figures/fig2_pca.pdf}
+
+}
+
+\caption{Figure 2: Illustration of dimensionality reduction of metabolic
+traits into metabolic clusters}
+
+\end{figure}
+
+To support phenotypic clustering, genetic data will be incorporated
+through partitioned polygenic risk scores (PRS) for type 2
+diabetes{[}\textsuperscript{33}{]}\textsuperscript{34}. These scores
+will be added with underlying metabolic traits such as glucagon and
+incretin, inflammation, beta-cell function, obesity, liver fat, and
+insulin resistance. This approach enables us to decipher phenotypes
+driven by genetic risk scores that contribute to cardiometabolic
+disease.
+
+\hypertarget{research-design-and-methods-1}{%
+\subsubsection{Research design and
+methods}\label{research-design-and-methods-1}}
+
+We use data from previous work in The Fenland study and ADDITION-PRO,
+including genotypes, metabolomic profiles, and markers of metabolism and
+inflammation\textsuperscript{12,13,29,35--38}. By combing different
+liver function biomarkers from images and blood measurements, we will be
+enable to generate a general, multidimensional indication of liver
+health.
+
+We will apply PCA and UMAP to integrate variables and identify a
+restricted number of metabolic dimensions that reflect the interplay
+between incretin and glucagon responses along with concurrent
+glucose-insulin dynamics during the OGTT\textsuperscript{39}. We will
+further add dimensions of obesity, insulin resistance, inflammation,
+liver health markers, subsequently examine these dimensions in relation
+to diabetes risk\textsuperscript{40}. Finally, metabolite-based profiles
+and partitioned PRS will be analyzed separately in relation to
+cardiometabolic outcomes and subsequently incorporated to enrich the
+dimensional metabolic profiling.
+
+\hypertarget{work-package-3-to-predict-incretin-and-glucagon-responses-in-conjuction-with-metabolic-traits-based-clinical-and-biological-traits}{%
+\subsection{Work Package 3: To predict incretin and glucagon responses
+in conjuction with metabolic traits based clinical and biological
+traits}\label{work-package-3-to-predict-incretin-and-glucagon-responses-in-conjuction-with-metabolic-traits-based-clinical-and-biological-traits}}
+
+Hypothesis for Work Package 3: population heterogeneity of incretin and
+glucagon responses in conjunction with metabolic traits can be predicted
+to a clinically useful degree based on clinical, genetic and metabolic
+biomarkers, and these predictions can stratify individuals by their risk
+of progression to type 2 diabetes and related complications.
+
+Given the fact that it is impractical to assess a full incretin and
+glucagon response in clinical practice, WP3 aims to establish a
+practical set of biomarkers that jointly have the capacity to
+characterize incretin and glucagon responses. Analyses in the Fenland
+study will be carried out across three levels: (1) traditional clinical
+characteristics, (2) metabolomics profiles, and (3) genomic data. The
+utility of these predicted traits will be investigated in relation to
+cardiometabolic outcomes in large population-based cohorts that include
+the same biomarkers but have not measured incretin and glucagon
+responses, such as the UK Biobank, as well as using available markers in
+Danish registries.
+
+{[}Add in conjuction with CM traits{]}
+
+\hypertarget{research-design-and-methods-2}{%
+\subsubsection{Research design and
+methods}\label{research-design-and-methods-2}}
+
+To predict incretin and glucagon responses based on clinical and
+metabolite data, we will apply a two-layered modeling approach in the
+Fenland study. Clinical and metabolic profiles will be used separately
+and in combination to predict responses. For variable selection in both
+layers, we will apply two strategies: restricting variance and using
+linear LASSO regression to shrink and select the most predictive
+variables. To support this, we will employ machine learning models to
+capture undefined interactions and identify important predictors based
+on variable importance\textsuperscript{41}. Our approach follows
+established principles in machine learning and statistical modeling,
+adhering to standardized practices for prediction, reporting, and
+validation\textsuperscript{42--45}.
+
+These PRSs will be incorporated into the aforementioned predictive
+layers as composite predictors of incretin and glucagon responses. PRS
+for other relevant traits such as obesity, insulin resistance, beta-cell
+function, liver function and low-grade inflammation will also be
+considered where relevant.
+
+\hypertarget{study-description}{%
+\subsection{Study description}\label{study-description}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Feature
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fenland study
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ADDITION-PRO Study
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Baseline data collection period} & 2005-2015 (Phase 1) &
+2009--2011 \\
+\textbf{Follow-up} & 2014-2020 (Phase 2)2023-2025 (Phase 3) & Danish
+National Registries (up to 2024) \\
+\textbf{Included participants} & UK general population aged 30-55 years
+& Individuals at high risk of diabetes \\
+\textbf{Number of participants} & 12,435 & 2,082 \\
+\textbf{Measure from OGTT} & GLP-1, GIP, glucagon, glucose and insulin
+(t= 0, 120 min) & GLP-1, GIP, glucagon, glucose and insulin (t= 0, 30,
+120 min)\textsuperscript{12,13,37} \\
+\textbf{Other relevant metabolic measures} & \textbf{Adiposity from DEXA
+scan:}- Visceral and subcutaneous fat- Bone density\textbf{Liver
+function:}- Ultrasound liver images- GGT, ALT- glucagon -- alanine
+index- Alkaline Phosphatase\textbf{Inflammation:}- Interleukin 6 (IL-6),
+high sensitivity CRP, adiponectin & \textbf{Adiposity:}- Visceral and
+subcutaneous fat from ultrasonography- adiponectin\textbf{Liver
+function:}- Ultrasound liver images (still B-mode images with liver
+protocol)- GGT, ALT- glucagon -- alanine index\textbf{Inflammation:}-
+soluble CD163, and high sensitivity CRP \\
+\textbf{Assessment method of metabolites} & LC electrospray ionization
+and flow-injection analysis tandem MS (ref), targeted metabolomics &
+Proton nuclear magnetic resonance spectroscopy, targeted
+metabolomics\textsuperscript{35} \\
+\textbf{Sample tissue} & Fasting plasma blood samples & Both fasting and
+during the OGTT\textsuperscript{35,36} \\
+\textbf{Number of metabolites} & 175 (acylcarnitines, amines,
+sphingolipids and phospholipids) & 231 lipid-related and 3 BCAA (fasting
+isoleucine, leucine and valine levels) \\
+\textbf{Genotyping} & Yes & Yes \\
+\textbf{Follow-up period} & 10-15 years & 13-years \\
+\textbf{Outcome} & \textbf{Metabolic-related outcomes:}- Progression to
+type 2 diabetes- Regression to normoglycemia- Glucose, lipids and kidney
+function, inflammation, adiposity trajectories\textbf{Macrovascular
+complications:}- Ischemic-related cardiovascular disease- Heart
+failure\textbf{Microvascular complications:}- Chronic kidney disease &
+\textbf{Metabolic-related outcomes:}- Progression to type 2 diabetes-
+Regression to normoglycemia- Glucose, lipids and kidney function
+trajectories\textbf{Macrovascular complications:}- Ischemic-related
+cardiovascular disease- Heart failure\textbf{Microvascular
+complications:}- Chronic kidney disease \\
+\end{longtable}
+
+\begin{quote}
+\begin{quote}
+\begin{quote}
+\begin{quote}
+\begin{quote}
+\begin{quote}
+\begin{quote}
+f4d441a6d8778fc30e6f66fc73377d4e5762b230
+\end{quote}
+\end{quote}
+\end{quote}
+\end{quote}
+\end{quote}
+\end{quote}
+\end{quote}
+
+To extend findings and predicted characterizations in larger
+population-based cohorts, will use ADDITION-PRO
+Study\textsuperscript{37} and UK Biobank\textsuperscript{46} and as
+validation cohorts.
+
+\begin{figure}
+
+{\centering \includegraphics[width=8in,height=\textheight]{figures/gant_diagram.pdf}
+
+}
+
+\caption{\textbf{Figure 3: Gantt chart}}
+
+\end{figure}
+
+\hypertarget{significance-of-the-project}{%
+\subsection{Significance of the
+project}\label{significance-of-the-project}}
+
+The Inter-SUSTAIN project supports the development of a precision
+approach to prevention of diabetes by identifying a set of easily
+obtainable biomarkers that optimally distinguish individuals with a high
+probability of stable pre-diabetes or remission from those at greatest
+risk of progressing to diabetes. This work aligns with the objectives of
+the Novo Nordisk Foundation-funded Steno National grant,
+\href{https://dp-next.github.io}{DP-Next}, specifically
+\href{https://dp-next.github.io/wp3.html}{Work Package 3
+(Heterogeneity)}, which aims to develop new strategies for diabetes
+prevention by identifying metabolic traits that are predictive and
+potentially preventable\textsuperscript{47}.
+
+The Fenland Study offers a unique opportunity through its long-term
+follow-up data to enable the identification of clinical and biological
+metabolic traits that characterize individuals at high risk of
+developing type 2 diabetes and related complications. Furthermore, these
+traits can be linked to longitudinal changes in cardiometabolic and
+inflammatory profiles, allowing for the identification of individuals
+with accelerated progression toward cardiometabolic complications. These
+insights support the timely identification of high-risk individuals who
+may benefit from early interventions, such as intensive lifestyle
+modifications or targeted pharmacological treatments.Our work will
+deepen understanding of heterogeneity in the risk of type 2 diabetes and
+provide clinical and genetic tools tools to enable further cohorts and
+registries to investigate variability in response to interventions.
+Ultimately, theese aims to contribute to precision prevention approaches
+by enhancing tailored decision-making that improves outcomes and reduces
+the burden of cardiometabolic disease.
+
+\hypertarget{collaboration}{%
+\subsection{Collaboration}\label{collaboration}}
+
+The synergy between this project and the MRC Epidemiology Unit lies in
+the integration of deep-phenotyped metabolic data with large-scale
+population health surveillance. The MRC Epidemiology Unit provides an
+environment for precision epidemiology. By combining the Unit's global
+leadership in studying the genetic and environmental determinants of
+obesity and type 2 diabetes with the projects focus on natural incretin
+and glucagon responses, we create a powerful framework to move from
+observational data to causal understanding. This collaboration allows
+for the cross-pollination of Danish clinical depth and the UK's
+extensive population-based datasets, ensuring that findings regarding
+metabolic drivers are both biologically robust and representative of the
+broader population.
+
+The MRC Epidemiology Unit, through the mentorship of experts in the
+Fenland Study, including Professor Nicholas Wareham and Professor Simon
+Griffin, will serve as the primary international host and scientific
+advisor. Their role, together with their research teams, will encompass
+three key areas:
+
+\textbf{1. Data Provision and Oversight:} Granting access to the Fenland
+Study (n = 12,435) and providing training to ensure a comprehensive
+understanding of the cohort and its data.
+
+\textbf{2. Methodological exchanges:} Facilitating the exchange of
+methods between the MRC Epidemiology Unit and the Epidemiology group at
+Aarhus University, with guidance in causal inference (including
+Mendelian randomization and mediation analysis) and machine learning
+techniques.
+
+\textbf{3. Validation Expertise:} Supporting the harmonization of data
+between the Fenland Study, ADDITION-PRO, and UK Biobank to validate
+identified metabolic profiles and mediating pathways, such as liver
+health and inflammation, across diverse geographical and demographic
+contexts.
+
+The synergy with the MRC Epidemiology Unit will be an ongoing
+institutional bridge with visit from PI, post doctoral stay and PhD
+visits. Our research is strategically aligned with the Unit's mission to
+improve population health through better risk stratification. We will
+maintain regular scientific exchange through joint virtual meetings to
+align the analytically protocols used in the Fenland Study. This
+collaboration serves as a pilot for long-term data integration between
+Danish and UK cohorts, establishing a permanent channel for
+investigating the heterogeneity of type 2 diabetes and refining
+precision prevention strategies across borders.
+
+\newpage
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-wagner2021}{}}%
+\CSLLeftMargin{1 }%
+\CSLRightInline{Wagner R, Heni M, Tabák AG, \emph{et al.}
+\href{https://doi.org/10.1038/s41591-020-1116-9}{Pathophysiology-based
+subphenotyping of individuals at elevated risk for type 2 diabetes}.
+\emph{Nature Medicine} 2021; \textbf{27}: 49--57.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-tabuxe1k2012}{}}%
+\CSLLeftMargin{2 }%
+\CSLRightInline{Tabák AG, Herder C, Rathmann W, Brunner EJ, Kivimäki M.
+\href{https://doi.org/10.1016/S0140-6736(12)60283-9}{Prediabetes: A
+high-risk state for diabetes development}. \emph{The Lancet} 2012;
+\textbf{379}: 2279--90.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-birkenfeld2024}{}}%
+\CSLLeftMargin{3 }%
+\CSLRightInline{Birkenfeld AL, Franks PW, Mohan V.
+\href{https://doi.org/10.1161/CIRCULATIONAHA.124.070463}{Precision
+medicine in people at risk for diabetes and atherosclerotic
+cardiovascular disease: A fresh perspective on prevention}.
+\emph{Circulation} 2024; \textbf{150}: 1910--2.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vazquezarreola}{}}%
+\CSLLeftMargin{4 }%
+\CSLRightInline{Vazquez Arreola E, Gong Q, Hanson RL, \emph{et al.}
+Prediabetes remission and cardiovascular morbidity and mortality:
+Post-hoc analyses from the diabetes prevention program outcome study and
+the DaQing diabetes prevention outcome study. \emph{The Lancet Diabetes
+\& Endocrinology}
+DOI:\href{https://doi.org/10.1016/S2213-8587(25)00295-5}{10.1016/S2213-8587(25)00295-5}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-kahn2024}{}}%
+\CSLLeftMargin{5 }%
+\CSLRightInline{Kahn SE, Deanfield JE, Jeppesen OK, \emph{et al.}
+\href{https://doi.org/10.2337/dc24-0491}{Effect of semaglutide on
+regression and progression of glycemia in people with overweight or
+obesity but without diabetes in the SELECT trial}. \emph{Diabetes Care}
+2024; \textbf{47}: 1350--9.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-jastreboffaniam.2025}{}}%
+\CSLLeftMargin{6 }%
+\CSLRightInline{Jastreboff Ania M., Roux Carel W. le, Stefanski Adam,
+\emph{et al.} \href{https://doi.org/10.1056/NEJMoa2410819}{Tirzepatide
+for obesity treatment and diabetes prevention}. \emph{New England
+Journal of Medicine} 2025; \textbf{392}: 958--71.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-jastreboffaniam.2023}{}}%
+\CSLLeftMargin{7 }%
+\CSLRightInline{Jastreboff Ania M., Kaplan Lee M., Frías Juan P.,
+\emph{et al.}
+\href{https://doi.org/10.1056/NEJMoa2301972}{Triple{\textendash}hormone-receptor
+agonist retatrutide for obesity {\textemdash} a phase 2 trial}.
+\emph{New England Journal of Medicine} 2023; \textbf{389}: 514--26.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-sanyal2024}{}}%
+\CSLLeftMargin{8 }%
+\CSLRightInline{Sanyal AJ, Kaplan LM, Frias JP, \emph{et al.}
+\href{https://doi.org/10.1038/s41591-024-03018-2}{Triple hormone
+receptor agonist retatrutide for metabolic dysfunction-associated
+steatotic liver disease: A randomized phase 2a trial}. \emph{Nature
+Medicine} 2024; \textbf{30}: 2037--48.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lincoffa.michael2023}{}}%
+\CSLLeftMargin{9 }%
+\CSLRightInline{Lincoff A. Michael, Brown-Frandsen Kirstine, Colhoun
+Helen M., \emph{et al.}
+\href{https://doi.org/10.1056/NEJMoa2307563}{Semaglutide and
+cardiovascular outcomes in obesity without diabetes}. \emph{New England
+Journal of Medicine} 2023; \textbf{389}: 2221--32.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-nauck1986}{}}%
+\CSLLeftMargin{10 }%
+\CSLRightInline{NAUCK MA, HOMBERGER E, SIEGEL EG, \emph{et al.}
+\href{https://doi.org/10.1210/jcem-63-2-492}{Incretin effects of
+increasing glucose loads in man calculated from venous insulin and
+c-peptide responses*}. \emph{The Journal of Clinical Endocrinology \&
+Metabolism} 1986; \textbf{63}: 492--8.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-huxe6dersdal2023}{}}%
+\CSLLeftMargin{11 }%
+\CSLRightInline{Hædersdal S, Andersen A, Knop FK, Vilsbøll T.
+\href{https://doi.org/10.1038/s41574-023-00817-4}{Revisiting the role of
+glucagon in health, diabetes mellitus and other metabolic diseases}.
+\emph{Nature Reviews Endocrinology} 2023; \textbf{19}: 321--35.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-fuxe6rch2015}{}}%
+\CSLLeftMargin{12 }%
+\CSLRightInline{Færch K, Torekov SS, Vistisen D, \emph{et al.}
+\href{https://doi.org/10.2337/db14-1751}{GLP-1 response to oral glucose
+is reduced in prediabetes, screen-detected type 2 diabetes, and obesity
+and influenced by sex: The ADDITION-PRO study}. \emph{Diabetes} 2015;
+\textbf{64}: 2513--25.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-fuxe6rch2016}{}}%
+\CSLLeftMargin{13 }%
+\CSLRightInline{Færch K, Vistisen D, Pacini G, \emph{et al.}
+\href{https://doi.org/10.2337/db16-0240}{Insulin resistance is
+accompanied by increased fasting glucagon and delayed glucagon
+suppression in individuals with normal and impaired glucose regulation}.
+\emph{Diabetes} 2016; \textbf{65}: 3473--81.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-weweralbrechtsen2018}{}}%
+\CSLLeftMargin{14 }%
+\CSLRightInline{Wewer Albrechtsen NJ, Færch K, Jensen TM, \emph{et al.}
+\href{https://doi.org/10.1007/s00125-017-4535-5}{Evidence of a
+liver-alpha cell axis in humans: hepatic insulin resistance attenuates
+relationship between fasting plasma glucagon and glucagonotropic amino
+acids.} \emph{Diabetologia} 2018; \textbf{61}: 671--80.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-jujic2020}{}}%
+\CSLLeftMargin{15 }%
+\CSLRightInline{Jujić A, Atabaki-Pasdar N, Nilsson PM, \emph{et al.}
+\href{https://doi.org/10.1007/s00125-020-05093-9}{Glucose-dependent
+insulinotropic peptide and risk of cardiovascular events and mortality:
+a prospective study.} \emph{Diabetologia} 2020; \textbf{63}: 1043--54.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-carrasco-zanini2022}{}}%
+\CSLLeftMargin{16 }%
+\CSLRightInline{Carrasco-Zanini J, Pietzner M, Lindbohm JV, \emph{et
+al.} \href{https://doi.org/10.1038/s41591-022-02055-z}{Proteomic
+signatures for identification of impaired glucose tolerance}.
+\emph{Nature Medicine} 2022; \textbf{28}: 2293--300.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-desilva2019}{}}%
+\CSLLeftMargin{17 }%
+\CSLRightInline{De Silva NMG, Borges MC, Hingorani AD, \emph{et al.}
+\href{https://doi.org/10.2337/db18-1048}{Liver function and risk of type
+2 diabetes: Bidirectional mendelian randomization study}.
+\emph{Diabetes} 2019; \textbf{68}: 1681--91.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-wittemans2019}{}}%
+\CSLLeftMargin{18 }%
+\CSLRightInline{Wittemans LBL, Lotta LA, Oliver-Williams C, \emph{et
+al.} \href{https://doi.org/10.1038/s41467-019-08936-1}{Assessing the
+causal association of glycine with risk of cardio-metabolic diseases}.
+\emph{Nature Communications} 2019; \textbf{10}: 1060.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lotta2021}{}}%
+\CSLLeftMargin{19 }%
+\CSLRightInline{Lotta LA, Pietzner M, Stewart ID, \emph{et al.}
+\href{https://doi.org/10.1038/s41588-020-00751-5}{A cross-platform
+approach identifies genetic regulators of human metabolism and health}.
+\emph{Nature Genetics} 2021; \textbf{53}: 54--64.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-agrawal2024}{}}%
+\CSLLeftMargin{20 }%
+\CSLRightInline{Agrawal S, Luan J, Cummings BB, Weiss EJ, Wareham NJ,
+Khera AV. \href{https://doi.org/10.2337/db23-0575}{Relationship of fat
+mass ratio, a biomarker for lipodystrophy, with cardiometabolic traits}.
+\emph{Diabetes} 2024; \textbf{73}: 1099--111.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bowker2020}{}}%
+\CSLLeftMargin{21 }%
+\CSLRightInline{Bowker N, Shah RL, Sharp SJ, \emph{et al.}
+\href{https://doi.org/10.1016/j.ebiom.2020.103062}{Meta-analysis
+investigating the role of interleukin-6 mediated inflammation in type 2
+diabetes}. \emph{EBioMedicine} 2020; \textbf{61}: 103062.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-daveysmith2014}{}}%
+\CSLLeftMargin{22 }%
+\CSLRightInline{Davey Smith G, Hemani G.
+\href{https://doi.org/10.1093/hmg/ddu328}{Mendelian randomization:
+Genetic anchors for causal inference in epidemiological studies}.
+\emph{Human Molecular Genetics} 2014; \textbf{23}: R89--98.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-johnston2020}{}}%
+\CSLLeftMargin{23 }%
+\CSLRightInline{Johnston L, Wittenbecher C. Inference of causal links
+between metabolomics and disease incidence. 2020.
+\url{https://github.com/NetCoupler/NetCoupler}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vanderweele2015}{}}%
+\CSLLeftMargin{24 }%
+\CSLRightInline{VanderWeele T. Explanation in causal inference: Methods
+for mediation and interaction. Oxford University Press, 2015.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-winther-suxf8rensen2020}{}}%
+\CSLLeftMargin{25 }%
+\CSLRightInline{Winther-Sørensen M, Galsgaard KD, Santos A, \emph{et
+al.} \href{https://doi.org/10.1016/j.molmet.2020.101080}{Glucagon
+acutely regulates hepatic amino acid catabolism and the effect may be
+disturbed by steatosis}. \emph{Molecular Metabolism} 2020; \textbf{42}:
+101080.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-stefan2025}{}}%
+\CSLLeftMargin{26 }%
+\CSLRightInline{Stefan N, Yki-Järvinen H, Neuschwander-Tetri BA.
+\href{https://doi.org/10.1016/S2213-8587(24)00318-8}{Metabolic
+dysfunction-associated steatotic liver disease: Heterogeneous
+pathomechanisms and effectiveness of metabolism-based treatment}.
+\emph{The Lancet Diabetes \& Endocrinology} 2025; \textbf{13}: 134--48.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-hammoud2023}{}}%
+\CSLLeftMargin{27 }%
+\CSLRightInline{Hammoud R, Drucker DJ.
+\href{https://doi.org/10.1038/s41574-022-00783-3}{Beyond the pancreas:
+Contrasting cardiometabolic actions of GIP and GLP1}. \emph{Nature
+Reviews Endocrinology} 2023; \textbf{19}: 201--16.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-powell2020}{}}%
+\CSLLeftMargin{28 }%
+\CSLRightInline{Powell R, De Lucia Rolfe E, Day FR, \emph{et al.}
+\href{https://doi.org/10.1101/2020.12.16.20248330}{Development and
+validation of total and regional body composition prediction equations
+from anthropometry and single frequency segmental bioelectrical
+impedance with DEXA}. \emph{medRxiv} 2020; : 2020.12.16.20248330.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-deichgruxe6ber2016}{}}%
+\CSLLeftMargin{29 }%
+\CSLRightInline{Deichgræber P, Witte DR, Møller HJ, \emph{et al.}
+\href{https://doi.org/10.1007/s00125-016-4075-4}{Soluble CD163,
+adiponectin, c-reactive protein and progression of dysglycaemia in
+individuals at high risk of type 2 diabetes mellitus: The ADDITION-PRO
+cohort}. \emph{Diabetologia} 2016; \textbf{59}: 2467--76.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-gnatiucfriedrichs2023}{}}%
+\CSLLeftMargin{30 }%
+\CSLRightInline{Gnatiuc Friedrichs L, Trichia E, Aguilar-Ramirez D,
+Preiss D. \href{https://doi.org/10.1002/oby.23687}{Metabolic profiling
+of MRI-measured liver fat in the UK biobank}. \emph{Obesity} 2023;
+\textbf{31}: 1121--32.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vogelzangs2020}{}}%
+\CSLLeftMargin{31 }%
+\CSLRightInline{Vogelzangs N, Kallen CJH van der, Greevenbroek MMJ van,
+\emph{et al.} \href{https://doi.org/10.1038/s41366-020-0565-z}{Metabolic
+profiling of tissue-specific insulin resistance in human obesity:
+Results from the diogenes study and the maastricht study}.
+\emph{International Journal of Obesity} 2020; \textbf{44}: 1376--86.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-beyene2020}{}}%
+\CSLLeftMargin{32 }%
+\CSLRightInline{Beyene HB, Hamley S, Giles C, \emph{et al.}
+\href{https://doi.org/10.1210/clinem/dgaa054}{Mapping the associations
+of the plasma lipidome with insulin resistance and response to an oral
+glucose tolerance test}. \emph{The Journal of Clinical Endocrinology \&
+Metabolism} 2020; \textbf{105}: e1041--55.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-suzuki2024}{}}%
+\CSLLeftMargin{33 }%
+\CSLRightInline{Suzuki K, Hatzikotoulas K, Southam L, \emph{et al.}
+\href{https://doi.org/10.1038/s41586-024-07019-6}{Genetic drivers of
+heterogeneity in type 2 diabetes pathophysiology}. \emph{Nature} 2024;
+\textbf{627}: 347--57.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-udler2019}{}}%
+\CSLLeftMargin{34 }%
+\CSLRightInline{Udler MS, McCarthy MI, Florez JC, Mahajan A.
+\href{https://doi.org/10.1210/er.2019-00088}{Genetic risk scores for
+diabetes diagnosis and precision medicine}. \emph{Endocrine Reviews}
+2019; \textbf{40}: 1500--20.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mahendran2017}{}}%
+\CSLLeftMargin{35 }%
+\CSLRightInline{Mahendran Y, Jonsson A, Have CT, \emph{et al.}
+\href{https://doi.org/10.1007/s00125-017-4222-6}{Genetic evidence of a
+causal effect of insulin resistance on branched-chain amino acid
+levels}. \emph{Diabetologia} 2017; \textbf{60}: 873--8.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-buckley2017}{}}%
+\CSLLeftMargin{36 }%
+\CSLRightInline{Buckley MT, Racimo F, Allentoft ME, \emph{et al.}
+\href{https://doi.org/10.1093/molbev/msx103}{Selection in europeans on
+fatty acid desaturases associated with dietary changes}. \emph{Molecular
+Biology and Evolution} 2017; \textbf{34}: 1307--18.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-johansen2012}{}}%
+\CSLLeftMargin{37 }%
+\CSLRightInline{Johansen NB, Hansen AL, Jensen TM, \emph{et al.}
+\href{https://doi.org/10.1186/1471-2458-12-1078}{Protocol for
+ADDITION-PRO: a longitudinal cohort study of the cardiovascular
+experience of individuals at high risk for diabetes recruited from
+Danish primary care}. \emph{BMC Public Health} 2012; \textbf{12}: 1078.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-madsen2024}{}}%
+\CSLLeftMargin{38 }%
+\CSLRightInline{Madsen AL, Bonàs-Guarch S, Gheibi S, \emph{et al.}
+\href{https://doi.org/10.1038/s42255-024-01140-6}{Genetic architecture
+of oral glucose-stimulated insulin release provides biological insights
+into type 2 diabetes aetiology}. \emph{Nature Metabolism} 2024;
+\textbf{6}: 1897--912.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-zhou2024}{}}%
+\CSLLeftMargin{39 }%
+\CSLRightInline{Zhou Y, Chen H, Iao SI, \emph{et al.} Fdapace:
+Functional data analysis and empirical dynamics. 2024
+\url{https://CRAN.R-project.org/package=fdapace}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-healy2024}{}}%
+\CSLLeftMargin{40 }%
+\CSLRightInline{Healy J, McInnes L.
+\href{https://doi.org/10.1038/s43586-024-00363-x}{Uniform manifold
+approximation and projection}. \emph{Nature Reviews Methods Primers}
+2024; \textbf{4}: 82.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-dietrich2016}{}}%
+\CSLLeftMargin{41 }%
+\CSLRightInline{Dietrich S, Floegel A, Troll M, \emph{et al.}
+\href{https://doi.org/10.1093/ije/dyw145}{Random survival forest in
+practice: A method for modelling complex metabolomics data in time to
+event analysis}. \emph{International Journal of Epidemiology} 2016;
+\textbf{45}: 1406--20.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-collins2024}{}}%
+\CSLLeftMargin{42 }%
+\CSLRightInline{Collins GS, Moons KGM, Dhiman P, \emph{et al.}
+\href{https://doi.org/10.1136/bmj-2023-078378}{TRIPOD+AI statement:
+Updated guidance for reporting clinical prediction models that use
+regression or machine learning methods}. \emph{BMJ} 2024; \textbf{385}:
+e078378.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lopez-ayala2025}{}}%
+\CSLLeftMargin{43 }%
+\CSLRightInline{Lopez-Ayala P, Riley RD, Collins GS, Zimmermann T.
+\href{https://doi.org/10.1136/bmj-2024-082440}{Dealing with continuous
+variables and modelling non-linear associations in healthcare data:
+Practical guide}. \emph{BMJ} 2025; \textbf{390}: e082440.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-collins2024a}{}}%
+\CSLLeftMargin{44 }%
+\CSLRightInline{Collins GS, Dhiman P, Ma J, \emph{et al.}
+\href{https://doi.org/10.1136/bmj-2023-074819}{Evaluation of clinical
+prediction models (part 1): From development to external validation}.
+\emph{BMJ} 2024; \textbf{384}: e074819.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-riley2024}{}}%
+\CSLLeftMargin{45 }%
+\CSLRightInline{Riley RD, Archer L, Snell KIE, \emph{et al.}
+\href{https://doi.org/10.1136/bmj-2023-074820}{Evaluation of clinical
+prediction models (part 2): How to undertake an external validation
+study}. \emph{BMJ} 2024; \textbf{384}: e074820.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bycroft2018}{}}%
+\CSLLeftMargin{46 }%
+\CSLRightInline{Bycroft C, Freeman C, Petkova D, \emph{et al.}
+\href{https://doi.org/10.1038/s41586-018-0579-z}{The UK biobank resource
+with deep phenotyping and genomic data}. \emph{Nature} 2018;
+\textbf{562}: 203--9.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-witte2025}{}}%
+\CSLLeftMargin{47 }%
+\CSLRightInline{Witte DR, Johnston L, Røikjer J, Rasmussen N, Juhl CB.
+Work package 3: heterogeneity. 2025; published online Aug 19.
+\url{https://dp-next.github.io/wp3.html}.}
+
+\end{CSLReferences}
+
+
+
+\end{document}

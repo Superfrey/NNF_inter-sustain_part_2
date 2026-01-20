@@ -5,16 +5,17 @@
 The application must be written in **English** and submitted through the **NORMA** online portal. The system uses specific character limits (including spaces and line breaks) for each section.
 
 ### Text Section Limits
+
 # Application Requirements Summary
 
-| Section | Maximum Length | Key Requirements |
-| :--- | :--- | :--- |
-| **CV** | 4,000 characters | Include ORCID ID and publication metrics (H-index). |
-| **Publication List** | 5,000 characters | List your 10 most relevant publications. |
-| **Brief Description** | 2,000 characters | A stand-alone summary of your goals and methods.<br>[Draft Link](https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/Application_description.md) |
+| Section                 | Maximum Length    | Key Requirements                                                                                                                                                                                                           |
+|:------------------------|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **CV**                  | 4,000 characters  | Include ORCID ID and publication metrics (H-index).                                                                                                                                                                        |
+| **Publication List**    | 5,000 characters  | List your 10 most relevant publications.                                                                                                                                                                                   |
+| **Brief Description**   | 2,000 characters  | A stand-alone summary of your goals and methods.<br>[Draft Link](https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/Application_description.md)                                                               |
 | **Project Description** | 20,000 characters | Detailed research plan, state-of-the-art, and feasibility.<br>[Draft Link](https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/Application_description.md)<br>• *Note: Feasibility and Gantt chart need work.* |
-| **Lay Description** | 1,000 characters | A non-technical summary for the general public.<br>[Draft Link](https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/Application_description.md) |
-| **Literature** | 8,000 characters | References for the research plan (First author + et al.). |
+| **Lay Description**     | 1,000 characters  | A non-technical summary for the general public.<br>[Draft Link](https://github.com/Superfrey/NNF_inter-sustain_part_2/blob/main/Application_description.md)                                                                |
+| **Literature**          | 8,000 characters  | References for the research plan (First author + et al.).                                                                                                                                                                  |
 
 ## Critical Content Requirements
 
