@@ -10,28 +10,27 @@ csl: the-lancet.csl
 
 # Abbreviation
 
-ALP: Alkaline Phosphatase \
-ALT: Alanine Aminotransferase \
-AST: Aspartate Aminotransferase \
-BCAA: Branched-Chain Amino Acids \
-CRP: C-Reactive Protein \
-DAG: Directed Acyclic Graph \
-DEXA: Dual-Energy X-ray Absorptiometry \
-GGT: Gamma-Glutamyl Transferase \
-GIP: Gastric Inhibitory Polypeptide \
-GLP-1: Glucagon-Like Peptide 1 \
-IL-6: Interleukin 6 \
-IRR: Incidence Rate Ratio \
-LC-MS/MS: Liquid Chromatography–Mass Spectrometry/Mass Spectrometry \
-MAFLD: Metabolic Associated Fatty Liver Disease \
-MR: Mendelian Randomization \
+ALP: Alkaline Phosphatase\
+ALT: Alanine Aminotransferase\
+AST: Aspartate Aminotransferase\
+BCAA: Branched-Chain Amino Acids\
+CRP: C-Reactive Protein\
+DAG: Directed Acyclic Graph\
+DEXA: Dual-Energy X-ray Absorptiometry\
+GGT: Gamma-Glutamyl Transferase\
+GIP: Gastric Inhibitory Polypeptide\
+GLP-1: Glucagon-Like Peptide 1\
+IL-6: Interleukin 6\
+IRR: Incidence Rate Ratio\
+LC-MS/MS: Liquid Chromatography–Mass Spectrometry/Mass Spectrometry\
+MAFLD: Metabolic Associated Fatty Liver Disease\
+MR: Mendelian Randomization\
 MRC: Medical Research Council\
-NMR: Nuclear Magnetic Resonance \
-OGTT: Oral Glucose Tolerance Test \
-PCA: Principal Component Analysis \
-PRS: Polygenic Risk Score \
-UMAP: Uniform Manifold Approximation and Projection \
-
+NMR: Nuclear Magnetic Resonance\
+OGTT: Oral Glucose Tolerance Test\
+PCA: Principal Component Analysis\
+PRS: Polygenic Risk Score\
+UMAP: Uniform Manifold Approximation and Projection\
 
 # Project title
 
@@ -131,20 +130,20 @@ These PRSs will be incorporated into the aforementioned predictive layers as com
 
 ## Study description
 
-| Feature | Fenland study | ADDITION-PRO Study |
-| :--- | :--- | :--- |
-| **Baseline data collection period** | 2005-2015 (Phase 1) | 2009–2011 |
-| **Follow-up** | 2014-2020 (Phase 2)<br>2023-2025 (Phase 3) | Danish National Registries (up to 2024) |
-| **Included participants** | UK general population aged 30-55 years | Individuals at high risk of diabetes |
-| **Number of participants** | 12,435 | 2,082 |
-| **Measure from OGTT** | GLP-1, GIP, glucagon, glucose and insulin (t= 0, 120 min) | GLP-1, GIP, glucagon, glucose and insulin (t= 0, 30, 120 min)[@færch2015; @færch2016; @johansen2012] |
-| **Other relevant metabolic measures** | **Adiposity from DEXA scan:**<br>- Visceral and subcutaneous fat<br>- Bone density<br><br>**Liver function:**<br>- Ultrasound liver images<br>- GGT, ALT<br>- glucagon – alanine index<br>- Alkaline Phosphatase<br><br>**Inflammation:**<br>- Interleukin 6 (IL-6), high sensitivity CRP, adiponectin | **Adiposity:**<br>- Visceral and subcutaneous fat from ultrasonography<br>- adiponectin<br><br>**Liver function:**<br>- Ultrasound liver images (still B-mode images with liver protocol)<br>- GGT, ALT<br>- glucagon – alanine index<br><br>**Inflammation:**<br>- soluble CD163, and high sensitivity CRP |
-| **Assessment method of metabolites** | LC electrospray ionization and flow-injection analysis tandem MS (ref), targeted metabolomics | Proton nuclear magnetic resonance spectroscopy, targeted metabolomics [@mahendran2017] |
-| **Sample tissue** | Fasting plasma blood samples | Both fasting and during the OGTT[@buckley2017; @mahendran2017] |
-| **Number of metabolites** | 175 (acylcarnitines, amines, sphingolipids and phospholipids) | 231 lipid-related and 3 BCAA (fasting isoleucine, leucine and valine levels) |
-| **Genotyping** | Yes | Yes |
-| **Follow-up period** | 10-15 years | 13-years |
-| **Outcome** | **Metabolic-related outcomes:**<br>- Progression to type 2 diabetes<br>- Regression to normoglycemia<br>- Glucose, lipids and kidney function, inflammation, adiposity trajectories<br><br>**Macrovascular complications:**<br>- Ischemic-related cardiovascular disease<br>- Heart failure<br><br>**Microvascular complications:**<br>- Chronic kidney disease | **Metabolic-related outcomes:**<br>- Progression to type 2 diabetes<br>- Regression to normoglycemia<br>- Glucose, lipids and kidney function trajectories<br><br>**Macrovascular complications:**<br>- Ischemic-related cardiovascular disease<br>- Heart failure<br><br>**Microvascular complications:**<br>- Chronic kidney disease |
+| Feature                               | Fenland study                                                                                                                                                                                                                                                                                                                                                   | ADDITION-PRO Study                                                                                                                                                                                                                                                                                                                     |
+|:--------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Baseline data collection period**   | 2005-2015 (Phase 1)                                                                                                                                                                                                                                                                                                                                             | 2009–2011                                                                                                                                                                                                                                                                                                                              |
+| **Follow-up**                         | 2014-2020 (Phase 2)<br>2023-2025 (Phase 3)                                                                                                                                                                                                                                                                                                                      | Danish National Registries (up to 2024)                                                                                                                                                                                                                                                                                                |
+| **Included participants**             | UK general population aged 30-55 years                                                                                                                                                                                                                                                                                                                          | Individuals at high risk of diabetes                                                                                                                                                                                                                                                                                                   |
+| **Number of participants**            | 12,435                                                                                                                                                                                                                                                                                                                                                          | 2,082                                                                                                                                                                                                                                                                                                                                  |
+| **Measure from OGTT**                 | GLP-1, GIP, glucagon, glucose and insulin (t= 0, 120 min)                                                                                                                                                                                                                                                                                                       | GLP-1, GIP, glucagon, glucose and insulin (t= 0, 30, 120 min)[@færch2015; @færch2016; @johansen2012]                                                                                                                                                                                                                                   |
+| **Other relevant metabolic measures** | **Adiposity from DEXA scan:**<br>- Visceral and subcutaneous fat<br>- Bone density<br><br>**Liver function:**<br>- Ultrasound liver images<br>- GGT, ALT<br>- glucagon – alanine index<br>- Alkaline Phosphatase<br><br>**Inflammation:**<br>- Interleukin 6 (IL-6), high sensitivity CRP, adiponectin                                                          | **Adiposity:**<br>- Visceral and subcutaneous fat from ultrasonography<br>- adiponectin<br><br>**Liver function:**<br>- Ultrasound liver images (still B-mode images with liver protocol)<br>- GGT, ALT<br>- glucagon – alanine index<br><br>**Inflammation:**<br>- soluble CD163, and high sensitivity CRP                            |
+| **Assessment method of metabolites**  | LC electrospray ionization and flow-injection analysis tandem MS (ref), targeted metabolomics                                                                                                                                                                                                                                                                   | Proton nuclear magnetic resonance spectroscopy, targeted metabolomics [@mahendran2017]                                                                                                                                                                                                                                                 |
+| **Sample tissue**                     | Fasting plasma blood samples                                                                                                                                                                                                                                                                                                                                    | Both fasting and during the OGTT[@buckley2017; @mahendran2017]                                                                                                                                                                                                                                                                         |
+| **Number of metabolites**             | 175 (acylcarnitines, amines, sphingolipids and phospholipids)                                                                                                                                                                                                                                                                                                   | 231 lipid-related and 3 BCAA (fasting isoleucine, leucine and valine levels)                                                                                                                                                                                                                                                           |
+| **Genotyping**                        | Yes                                                                                                                                                                                                                                                                                                                                                             | Yes                                                                                                                                                                                                                                                                                                                                    |
+| **Follow-up period**                  | 10-15 years                                                                                                                                                                                                                                                                                                                                                     | 13-years                                                                                                                                                                                                                                                                                                                               |
+| **Outcome**                           | **Metabolic-related outcomes:**<br>- Progression to type 2 diabetes<br>- Regression to normoglycemia<br>- Glucose, lipids and kidney function, inflammation, adiposity trajectories<br><br>**Macrovascular complications:**<br>- Ischemic-related cardiovascular disease<br>- Heart failure<br><br>**Microvascular complications:**<br>- Chronic kidney disease | **Metabolic-related outcomes:**<br>- Progression to type 2 diabetes<br>- Regression to normoglycemia<br>- Glucose, lipids and kidney function trajectories<br><br>**Macrovascular complications:**<br>- Ischemic-related cardiovascular disease<br>- Heart failure<br><br>**Microvascular complications:**<br>- Chronic kidney disease |
 
 To extend findings and predicted characterizations in larger population-based cohorts, will use ADDITION-PRO Study[@johansen2012] and UK Biobank[@bycroft2018] and as validation cohorts.
 
@@ -156,7 +155,7 @@ The Inter-SUSTAIN project supports the development of a precision approach to di
 
 The Fenland Study offers a unique opportunity through its long-term follow-up population-based data to enable the identification of clinical and biological metabolic traits that characterize individuals at high risk of developing type 2 diabetes and related complications. Furthermore, these traits can be linked to longitudinal changes in cardiometabolic and inflammatory profiles, allowing for the identification of individuals with accelerated progression toward cardiometabolic complications. These insights support the timely identification of high-risk individuals who may benefit from early interventions, such as intensive lifestyle modifications or targeted pharmacological treatments. Our work will deepen understanding of heterogeneity in the risk of type 2 diabetes and provide clinical and genetic tools tools to enable further cohorts and registries to investigate population heterogeneity in response to interventions. Ultimately, these aims to contribute to precision prevention approaches by enhancing tailored decision-making that improves outcomes and reduces the burden of cardiometabolic disease.
 
-## Collaboration [- Needs something more connrete and specific]
+## Collaboration \[- Needs something more connrete and specific\]
 
 The synergy between this project and the MRC Epidemiology Unit lies in the integration of deep-phenotyped metabolic data with large-scale population health surveillance. The MRC Epidemiology Unit provides an environment for precision epidemiology. By combining the Unit’s global leadership in studying the genetic and environmental determinants of obesity and type 2 diabetes with the projects focus on natural incretin and glucagon responses, we create a powerful framework to move from observational data to causal understanding. This collaboration allows for the cross-pollination of Danish clinical depth and the UK’s extensive population-based datasets, ensuring that findings regarding metabolic drivers are both biologically robust and representative of the broader population.
 
@@ -164,8 +163,7 @@ The MRC Epidemiology Unit, through the mentorship of experts in the Fenland Stud
 
 **1. Data Provision and Oversight:** Granting access to the Fenland Study (n = 12,435) and providing training to ensure a comprehensive understanding of the cohort and its data.
 
-**2. Methodological exchanges:**
-Facilitating the exchange of methods between the MRC Epidemiology Unit and the Epidemiology group at Aarhus University, with guidance in causal inference (including Mendelian randomization and mediation analysis) and machine learning techniques.
+**2. Methodological exchanges:** Facilitating the exchange of methods between the MRC Epidemiology Unit and the Epidemiology group at Aarhus University, with guidance in causal inference (including Mendelian randomization and mediation analysis) and machine learning techniques.
 
 **3. Validation Expertise:** Supporting the harmonization of data between the Fenland Study, ADDITION-PRO, and UK Biobank to validate identified metabolic profiles and mediating pathways, such as liver health and inflammation, across diverse geographical and demographic contexts.
 
